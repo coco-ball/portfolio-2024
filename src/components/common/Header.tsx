@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <div
       className={
-        "flex w-fill sticky justify-between p-8 " +
+        "fixed w-screen flex justify-between p-8 " +
         `${currentTab === "home" ? "hidden" : ""}`
       }
     >
