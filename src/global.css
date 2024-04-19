@@ -20,10 +20,23 @@
   font-family: "TypewriterBlack";
   src: url(@/../../public/fonts/JMHTypewriter-Black.ttf) format("truetype");
 }
+@font-face {
+  font-family: "SohneLight";
+  src: url(@/../../public/fonts/Sohne-Leicht.otf) format("opentype");
+}
+@font-face {
+  font-family: "SohneRegular";
+  src: url(@/../../public/fonts/Sohne-Buch.otf) format("opentype");
+}
+@font-face {
+  font-family: "SohneMedium";
+  src: url(@/../../public/fonts/Sohne-Kräftig.otf) format("opentype");
+}
 
 body {
-  background-color: rgb(24 24 27);
-  color: white;
+  /* background-color: rgb(24 24 27);
+  color: white; */
+  font-family: "SohneRegular";
   /* font-family: "TypewriterRegular"; */
   /* font-family: "Overpass Mono", monospace; */
 }
