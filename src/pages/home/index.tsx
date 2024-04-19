@@ -5,7 +5,7 @@ function Home() {
   return (
     <main>
       <img src={LogoLarge} className="w-full pt-6" alt="Logo"></img>
-      <p className="absolute left-8 bottom-10 text-sm">
+      <p className="absolute left-8 bottom-10 text-sm ">
         Chaewon Yu <br />
         <br />
         A graphic Designer based in Seoul <br />
@@ -16,7 +16,8 @@ function Home() {
       <div className="absolute right-8 bottom-12">
         <Navbar />
       </div>
-      {/* <p className="text-zinc-900 absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-70%] text-center">
+      {/* center text */}
+      {/* <p className="text-zinc-900 absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-70%] text-sm text-center tracking-wider">
         Chaewon Yu <br />
         <br />
         A graphic Designer based in Seoul <br />
