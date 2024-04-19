@@ -1,5 +1,5 @@
 // import LogoSmall from "@/../public/image/logo_small.gif";
-import LogoSquare from "@/../public/image/logo_square.png";
+import LogoSquare from "@/../public/image/logo/logo_square.png";
 import { useMemo } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <div
       className={
-        "flex w-fill justify-between p-8 " +
+        "flex w-fill sticky justify-between p-8 " +
         `${currentTab === "home" ? "hidden" : ""}`
       }
     >

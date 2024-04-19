@@ -1,5 +1,5 @@
-function About() {
+function AboutPage() {
   return <main>About</main>;
 }
 
-export default About;
+export default AboutPage;

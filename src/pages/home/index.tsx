@@ -1,11 +1,11 @@
-import LogoLarge from "@/../public/image/logo_large.gif";
+import LogoLarge from "@/../public/image/logo/logo_large.gif";
 import Navbar from "@/components/common/Navbar";
 
-function Home() {
+function HomePage() {
   return (
     <main>
       <img src={LogoLarge} className="w-full pt-6" alt="Logo"></img>
-      <p className="absolute left-8 bottom-10 text-sm ">
+      <p className="absolute left-8 bottom-10 text-sm">
         Chaewon Yu <br />
         <br />
         A graphic Designer based in Seoul <br />
@@ -29,4 +29,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;
