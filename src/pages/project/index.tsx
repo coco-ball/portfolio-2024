@@ -11,10 +11,8 @@ export type Project = {
   mainCategory: string;
   category: string;
   tools: string;
-  image: Image[];
+  image: string[];
 };
-
-type Image = { id: number; name: string };
 
 export default function ProjectPage() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -40,12 +38,12 @@ export default function ProjectPage() {
         <ProjectDetail selectedProject={selectedProject}></ProjectDetail>
       </div>
       <ul className="col-span-2 grid gap-2 h-screen overflow-y-scroll">
-        {selectedProject?.image.map((img) => (
+        {selectedProject?.image.map((img, idx) => (
           <img
-            src={`/image/project/${img.name}`}
+            src={`/image/project/${img}`}
             className="w-full"
             alt=""
-            key={img.id}
+            key={idx}
           />
         ))}
       </ul>
