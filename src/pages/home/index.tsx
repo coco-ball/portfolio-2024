@@ -14,7 +14,7 @@ function Home() {
         {/* Internship at Vive Studios Lab 2023 */}
       </p>
       <div className="absolute right-8 bottom-12">
-        <Navbar />
+        <Navbar currentTab="home" />
       </div>
       {/* center text */}
       {/* <p className="text-zinc-900 absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-70%] text-sm text-center tracking-wider">

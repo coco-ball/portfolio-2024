@@ -1,13 +1,26 @@
 // import LogoSmall from "@/../public/image/logo_small.gif";
 import LogoSquare from "@/../public/image/logo_square.png";
-import { useNavigate } from "react-router-dom";
+import { useMemo } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
+
 export default function Header() {
-  const router = useNavigate();
-  if (window.location.pathname === "/") return null;
+  const location = useLocation();
+
+  const currentTab = useMemo(() => {
+    if (location.pathname === "/") return "home";
+    if (location.pathname === "/about") return "about";
+    if (location.pathname === "/project") return "project";
+    return "unknown";
+  }, [location.pathname]);
 
   return (
-    <div className="flex w-fill justify-between p-8">
+    <div
+      className={
+        "flex w-fill justify-between p-8 " +
+        `${currentTab === "home" ? "hidden" : ""}`
+      }
+    >
       {/* LongSpiral Logo */}
       {/* <div className="relative h-64 w-[624px]" onClick={() => router("/")}>
         <img src={LogoSmall} className="h-full absolute" alt="Logo" />
@@ -17,8 +30,10 @@ export default function Header() {
           alt="Logo"
         />
       </div> */}
-      <img src={LogoSquare} className="h-16" onClick={() => router("/")}></img>
-      <Navbar />
+      <Link to="/">
+        <img src={LogoSquare} className="h-16"></img>
+      </Link>
+      <Navbar currentTab={currentTab}></Navbar>
     </div>
   );
 }

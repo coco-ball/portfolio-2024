@@ -1,27 +1,25 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
-  const router = useNavigate();
+type NavbarProps = { currentTab: string };
+
+export default function Navbar({ currentTab }: NavbarProps) {
   return (
     <div className="flex justify-center gap-16 pr-8">
-      <button
-        className="hover:underline underline-offset-4"
-        onClick={() => router("/about")}
+      <Link to="/" className={`tab ${currentTab === "home" ? "current" : ""}`}>
+        Home
+      </Link>
+      <Link
+        to="/about"
+        className={`tab ${currentTab === "about" ? "current" : ""}`}
       >
         About
-      </button>
-      <button
-        className="hover:underline underline-offset-4"
-        onClick={() => router("/project")}
+      </Link>
+      <Link
+        to="/project"
+        className={`tab ${currentTab === "project" ? "current" : ""}`}
       >
         Project
-      </button>
-      <button
-        className="hover:underline underline-offset-4"
-        onClick={() => router("/contact")}
-      >
-        Contact
-      </button>
+      </Link>
     </div>
   );
 }

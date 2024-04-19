@@ -40,3 +40,12 @@ body {
   /* font-family: "TypewriterRegular"; */
   /* font-family: "Overpass Mono", monospace; */
 }
+
+@layer base {
+  .tab {
+    @apply hover:underline underline-offset-2;
+  }
+  .tab.current {
+    @apply underline;
+  }
+}
