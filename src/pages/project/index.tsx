@@ -19,7 +19,7 @@ export default function ProjectPage() {
 
   return (
     <div className=" grid grid-cols-4 gap-3">
-      <div className="col-span-2 h-fill flex justify-between mt-40 ">
+      <div className="col-span-2 h-fill flex justify-between mt-32 ">
         <ul className="text-sm ml-16 -rotate-6 h-fit ">
           {projectList.map((project: Project, idx) => (
             <div
@@ -37,7 +37,7 @@ export default function ProjectPage() {
         </ul>
         <ProjectDetail selectedProject={selectedProject}></ProjectDetail>
       </div>
-      <ul className="col-span-2 grid gap-2 h-screen overflow-y-scroll">
+      <ul className="col-span-2 grid h-screen overflow-y-scroll">
         {selectedProject?.image.map((img, idx) => (
           <img
             src={`/image/project/${img}`}

@@ -50,4 +50,11 @@ body {
   .button.current {
     @apply underline;
   }
+
+  .thumbnail {
+    @apply hidden absolute w-1/2 right-0;
+  }
+  .showThumbnail:hover .thumbnail {
+    @apply block;
+  }
 }
