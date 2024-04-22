@@ -36,6 +36,8 @@
 body {
   /* background-color: rgb(24 24 27);
   color: white; */
+  margin: 0;
+  padding: 0;
   height: 100vh;
   font-family: "SohneRegular";
   letter-spacing: 0.0075rem;

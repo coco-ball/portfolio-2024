@@ -40,11 +40,11 @@ const projectList = [
     korHonors: null,
   },
   {
-    name: "SNU Computer Science & Engineering Website",
+    name: "SNU CSE Website",
     year: "2023-2024",
     link: "https://cse.snu.ac.kr/",
     engDescription:
-      "This project is a renewal of the website of the Department of Computer Science and Engineering at Seoul National University. Our team, CSERAL, reorganized the information architecture of the existing website and refactored the data and website structure to make it stable and easy to maintain. We also redesigned the website with graphic elements that embody the concept of 'connection', which is the identity of CSE. Since it is an official website visited by various people of all ages, we have taken great care in improving information's intuitiveness and user-friendly experiences.",
+      "This project is a renewal of the website of the Department of Computer Science and Engineering at Seoul National University. Our team, CSEREAL, reorganized the information architecture of the existing website and refactored the data and website structure to make it stable and easy to maintain. We also redesigned the website with graphic elements that embody the concept of 'connection', which is the identity of CSE. Since it is an official website visited by various people of all ages, we have taken great care in improving information's intuitiveness and user-friendly experiences.",
     korDescription:
       "이 프로젝트는 서울대학교 컴퓨터공학부의 웹사이트를 리뉴얼한 프로젝트입니다. 저희 팀 CSEREAL은 기존 웹사이트의 정보 체계를 정리하고 데이터 및 웹사이트 구조를 안정적이고 유지보수가 쉽도록 리팩토링하였습니다. 또한 컴퓨터공학부의 아이덴티티로 꼽은 '연결'의 이미지를 그래픽 요소로 녹여내어 새로운 디자인을 적용하였습니다. 전연령의 다양한 사람들이 사용하는 학부 홈페이지인 만큼 직관적인 정보 전달과 사용자 친화적인 경험에 유의하며 디자인하였습니다.",
     mainCategory: "Website",

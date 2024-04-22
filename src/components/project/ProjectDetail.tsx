@@ -5,9 +5,7 @@ type ProjectDetailProps = { selectedProject: Project | null };
 export default function ProjectDetail({ selectedProject }: ProjectDetailProps) {
   return (
     <div
-      className={
-        "-rotate-6 mr-20 h-fit w-[20rem] " + (selectedProject ? "" : "hidden")
-      }
+      className={"mr-20 h-fit w-[20rem] " + (selectedProject ? "" : "hidden")}
     >
       <div className="project-summary">
         {selectedProject?.year + ", " + selectedProject?.mainCategory}

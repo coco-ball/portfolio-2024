@@ -21,7 +21,7 @@ export default function ProjectPage() {
 
   return (
     <div className=" grid grid-cols-4 gap-3">
-      <div className="col-span-2 h-fill flex justify-between mt-32 ">
+      <div className="col-span-2 flex justify-between pt-32 h-screen overflow-y-scroll">
         <ul className="text-sm ml-16 -rotate-6 h-fit ">
           {projectList.map((project: Project, idx) => (
             <div
