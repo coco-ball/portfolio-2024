@@ -29,6 +29,12 @@ export default function ProjectDetail({ selectedProject }: ProjectDetailProps) {
         <p className="mb-5">{selectedProject?.engDescription}</p>
         <p>{selectedProject?.korDescription}</p>
       </div>
+      {selectedProject?.engHonors && (
+        <p className="text-xs w-3/4 mt-8 px-1 bg-black text-white">
+          {selectedProject?.engHonors} <br />
+          {selectedProject?.korHonors}
+        </p>
+      )}
     </div>
   );
 }

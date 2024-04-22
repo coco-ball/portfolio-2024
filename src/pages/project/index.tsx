@@ -12,6 +12,8 @@ export type Project = {
   category: string;
   tools: string;
   image: string[];
+  engHonors: string | null;
+  korHonors: string | null;
 };
 
 export default function ProjectPage() {
@@ -37,7 +39,7 @@ export default function ProjectPage() {
         </ul>
         <ProjectDetail selectedProject={selectedProject}></ProjectDetail>
       </div>
-      <ul className="col-span-2 grid h-screen overflow-y-scroll">
+      <ul className="col-span-2 h-screen overflow-y-scroll">
         {selectedProject?.image.map((img, idx) => (
           <img
             src={`/image/project/${img}`}
