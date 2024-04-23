@@ -83,6 +83,66 @@ const projectList = [
     engHonors: "",
     korHonors: "",
   },
+  {
+    name: "The Physiological Process of Tattooing",
+    year: "2023",
+    link: "",
+    engDescription:
+      "The Physiological Process of Tattooing is an animated explainer video which visualizes what happens to our body when we get a tattoo.",
+    korDescription:
+      "The Physiological Process of Tattooing은 타투를 받을 때 몸에서 일어나는 일과 원리를 설명한 애니메이션입니다.",
+    mainCategory: "Vide, 31sec",
+    category: "Video, Animation, Illustration",
+    tools: "Adobe Photoshop, After Effect",
+    image: getImageArray("tattooing", 12),
+    engHonors: "",
+    korHonors: "",
+  },
+  {
+    name: "BooYoo",
+    year: "2023",
+    link: "",
+    engDescription:
+      "BooYoo is a video visualizing the word 浮遊. A calm pond was designed by overlapping wave layers mixed with blend mode and floating several pieces of duckweed on top.",
+    korDescription:
+      "BooYoo는 단어 浮遊(부유)를 시각화한 비디오입니다. 블렌드 모드를 입힌 물결을 여러 겹 쌓고, 몇 점의 개구리밥을 올려 잔잔한 연못을 만들어냈습니다.",
+    mainCategory: "Vide, 7sec",
+    category: "Video, Collage",
+    tools: "Adobe Photoshop, After Effect",
+    image: getImageArray("booyoo", 3),
+    engHonors: "",
+    korHonors: "",
+  },
+  {
+    name: "Perfume",
+    year: "2023",
+    link: "",
+    engDescription:
+      'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
+    korDescription:
+      "Perfume은 영화 “향수 : 어느 살인자의 이야기”의 오프닝 시퀀스입니다. 향수를 만드는 과정을 추상적으로 묘사하기 위해 일부 씬을 제외하고 직접 촬영하였으며 보색을 활용한 색감으로 기이한 분위기를 연출하였습니다.",
+    mainCategory: "Vide, 1min 52sec",
+    category: "Video, Production",
+    tools: "Adobe Premiere Pro, After Effect",
+    image: getImageArray("perfume", 11),
+    engHonors: "",
+    korHonors: "",
+  },
+  {
+    name: "Salvador Dali",
+    year: "2023",
+    link: "",
+    engDescription:
+      'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
+    korDescription:
+      "Perfume은 영화 “향수 : 어느 살인자의 이야기”의 오프닝 시퀀스입니다. 향수를 만드는 과정을 추상적으로 묘사하기 위해 일부 씬을 제외하고 직접 촬영하였으며 보색을 활용한 색감으로 기이한 분위기를 연출하였습니다.",
+    mainCategory: "Vide, 1min 3sec",
+    category: "Video, Collage",
+    tools: "Adobe Photoshop, Illustrator, Stable Diffusion",
+    image: getImageArray("salvadordali", 24),
+    engHonors: "",
+    korHonors: "",
+  },
 ];
 
 export default projectList;
