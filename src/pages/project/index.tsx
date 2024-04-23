@@ -20,23 +20,21 @@ export default function ProjectPage() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <div className=" grid grid-cols-4 gap-3">
-      <div className="col-span-2 flex justify-between pt-32 h-screen overflow-y-scroll">
-        <ul className="text-sm ml-16 -rotate-6 h-fit ">
-          {projectList.map((project: Project, idx) => (
-            <div
-              className={`button ${
-                selectedProject === project ? "current" : ""
-              }`}
-              key={idx}
-              onClick={() => {
-                setSelectedProject(project);
-              }}
-            >
-              {project.name}
-            </div>
-          ))}
-        </ul>
+    <div className="grid grid-cols-4 gap-3">
+      <ul className="text-sm -rotate-6 absolute left-16 top-32 w-60">
+        {projectList.map((project: Project, idx) => (
+          <div
+            className={`button ${selectedProject === project ? "current" : ""}`}
+            key={idx}
+            onClick={() => {
+              setSelectedProject(project);
+            }}
+          >
+            {project.name}
+          </div>
+        ))}
+      </ul>
+      <div className="col-start-2 pt-14 h-screen overflow-y-scroll">
         <ProjectDetail selectedProject={selectedProject}></ProjectDetail>
       </div>
       <ul className="col-span-2 h-screen overflow-y-scroll">

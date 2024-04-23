@@ -18,9 +18,8 @@ const projectList = [
     mainCategory: "Service Design",
     category: "Service Design, VR, UX/UI Design", //나중에 리스트로 바꾸기
     tools: "Unity, Adobe Premiere Pro",
-    image: getImageArray("mindly", 12),
-    engHonors:
-      "Grand Prize in  2023 SK Creative Challenge at 2023 HCI Conference",
+    image: getImageArray("mindly", 13),
+    engHonors: "Grand Prize in SK Creative Challenge at 2023 HCI Conference",
     korHonors:
       "2023 HCI 학회의 SK Creative Challenge에서 대상을 수상하였습니다.",
   },
@@ -33,14 +32,14 @@ const projectList = [
     korDescription:
       "성수동의 복합문화공간 에스팩토리(S-Factory)의 브랜드 아이덴티티를 재정립하였습니다.에스팩토리는 A,B,C,D 네 개의 동을 문화, 예술, 소통의 창으로 운영하며 성수, 브랜드, 그리고 사람들을 연결합니다. 이에 착안하여 선적인 흐름이 나타나는 로고와 조합이 자유로운 모듈 등 새로운 디자인 시스템을 개발하였습니다.",
     mainCategory: "Identity Design",
-    category: "Identity Design, Graphic Design", //나중에 리스트로 바꾸기
+    category: "Identity Design, Graphic Design",
     tools: "Adobe Photoshop, Illustrator, Indesign",
     image: getImageArray("sfactory", 27),
     engHonors: null,
     korHonors: null,
   },
   {
-    name: "SNU CSE Website",
+    name: "SNU Computer Science &\nEngineering Website",
     year: "2023-2024",
     link: "https://cse.snu.ac.kr/",
     engDescription:
@@ -48,11 +47,41 @@ const projectList = [
     korDescription:
       "이 프로젝트는 서울대학교 컴퓨터공학부의 웹사이트를 리뉴얼한 프로젝트입니다. 저희 팀 CSEREAL은 기존 웹사이트의 정보 체계를 정리하고 데이터 및 웹사이트 구조를 안정적이고 유지보수가 쉽도록 리팩토링하였습니다. 또한 컴퓨터공학부의 아이덴티티로 꼽은 '연결'의 이미지를 그래픽 요소로 녹여내어 새로운 디자인을 적용하였습니다. 전연령의 다양한 사람들이 사용하는 학부 홈페이지인 만큼 직관적인 정보 전달과 사용자 친화적인 경험에 유의하며 디자인하였습니다.",
     mainCategory: "Website",
-    category: "Website, UX/UI Design", //나중에 리스트로 바꾸기
+    category: "Website, UX/UI Design",
     tools: "Figma, Adobe Illustrator",
     image: getImageArray("snucse", 11),
     engHonors: null,
     korHonors: null,
+  },
+  {
+    name: "Flood Vulnerability Map for Banjihas in Seoul",
+    year: "2023",
+    link: "https://kdja-visualization-dviz.vercel.app/waterMap.html",
+    engDescription:
+      'Our team, D-Viz, created a map that visualizes "banjihas" in Seoul that are vulnerable to flooding during the rainy season. By mining public data such as Building Registers and Integrated Building Information, we attained cogent information on banjihas in 4 gus in Seoul — Gwanak, Dongjak, Yeongdeungpo, and Seocho. The flood vulnerability was analyzed by considering the Inundation Trace Map, the Flood Prediction Map, and the degree of deterioration of the building. We visualized three different levels of flood vulnerability with apparent colors and raining and water-filling interactions.',
+    korDescription:
+      "D-Viz팀 5인과 서울시 4개 구의 반지하 중 집중호우 발생 시 침수가 우려되는 건물을 시각화한 지도를 제작하였습니다. 건축물 대장과 건축통합정보 등 공공데이터를 바탕으로 서울시 관악, 동작, 영등포, 서초구의 유효한 반지하 건물 정보를 추려낸 후 침수흔적도와 침수예상도, 건물 노후 정도를 고려하여 침수 우려 정도를 분석하였습니다. 건물마다 상이한 침수 우려 정도를 직관적인 색깔 및 건물에 물이 차는 인터랙션으로 시각화하였습니다.",
+    mainCategory: "Website",
+    category: "Website, Data Analysis, Visualization",
+    tools: "R, QGIS, Mapbox, HTML, CSS, JS",
+    image: getImageArray("banjihamap", 8),
+    engHonors: "Published on page 9 of the Seoul Shinmun on June 29, 2023",
+    korHonors: "2023년 6월 29일자 서울신문 9면에 실린 프로젝트입니다.",
+  },
+  {
+    name: "Waffle Sans",
+    year: "2023",
+    link: "https://interactive-study.wafflestudio.com/projects/waffle-sans/",
+    engDescription:
+      'This project was carried out by Interactive Study, in which six developers and designers are studying experimental web interactions. We created Waffle Sans modifying the variable font "Leon Sans" (Copyright© Jongmin Kim). When you write with Waffle Sans, each character turns into a Christmas wreath with leaves and ornaments. We\'d expanded Waffle Sans into a service that you can enclose Christmas wreath typography in a letter and send to others. I participated in project planning, wreath design, and UX/UI design.',
+    korDescription:
+      '개발자 3인, 디자이너 3인이 웹의 새로운 인터랙션을 연구하는 Interactive Study에서 진행한 프로젝트로, 배리어블 폰트 "Leon Sans"(Copyright© Jongmin Kim)를 활용하여 Waffle Sans를 제작하였습니다. Waffle Sans로 글자를 쓰면 잎사귀와 여러 오나먼트가 생겨나 곧 크리스마스 리스가 됩니다. 이 크리스마스 리스 타이포그래피는 편지 속에 담아 타인에게 보낼 수 있는 서비스로 확장하였습니다. 기획 및 리스 디자인, UX/UI 디자인에 참여하였습니다.',
+    mainCategory: "Website",
+    category: "Website, Service Design, Typography",
+    tools: "Figma, Adobe Illustrator",
+    image: getImageArray("wafflesans", 4),
+    engHonors: "",
+    korHonors: "",
   },
 ];
 

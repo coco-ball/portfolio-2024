@@ -31,7 +31,7 @@ export default function Header() {
         />
       </div> */}
       <Link to="/">
-        <img src={LogoSquare} className="h-16"></img>
+        <img src={LogoSquare} className="h-16 w-16"></img>
       </Link>
       <Navbar currentTab={currentTab}></Navbar>
     </div>

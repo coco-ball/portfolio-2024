@@ -46,6 +46,10 @@ body {
 }
 
 @layer base {
+  .typewriter {
+    font-family: "TypewriterRegular";
+  }
+
   .button {
     @apply hover:underline hover:cursor-pointer underline-offset-2;
   }

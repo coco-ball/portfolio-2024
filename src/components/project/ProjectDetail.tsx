@@ -4,13 +4,11 @@ type ProjectDetailProps = { selectedProject: Project | null };
 
 export default function ProjectDetail({ selectedProject }: ProjectDetailProps) {
   return (
-    <div
-      className={"mr-20 h-fit w-[20rem] " + (selectedProject ? "" : "hidden")}
-    >
+    <div className={"mb-20 w-[20rem] " + (selectedProject ? "" : "hidden")}>
       <div className="project-summary">
         {selectedProject?.year + ", " + selectedProject?.mainCategory}
       </div>
-      <div className="text-[3.25rem] leading-[1.15]  mt-2">
+      <div className="text-[3.25rem] leading-[1.15] mt-2">
         {selectedProject?.name}
       </div>
       <div className="text-sm mt-5">
@@ -28,10 +26,14 @@ export default function ProjectDetail({ selectedProject }: ProjectDetailProps) {
         <p>{selectedProject?.korDescription}</p>
       </div>
       {selectedProject?.engHonors && (
-        <p className="text-xs w-3/4 mt-8 px-1 bg-black text-white">
-          {selectedProject?.engHonors} <br />
-          {selectedProject?.korHonors}
-        </p>
+        <div className="text-xs mt-8 content-center p-0.5 w-32 h-32 bg-gray-300 text-white overflow-clip">
+          <p className="-rotate-6 w-[7.75rem]">
+            {selectedProject?.engHonors}
+            <br />
+            <br />
+            {selectedProject?.korHonors}
+          </p>
+        </div>
       )}
     </div>
   );
