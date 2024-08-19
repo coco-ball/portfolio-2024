@@ -9,7 +9,6 @@ export default function Header() {
 
   const currentTab = useMemo(() => {
     if (location.pathname === "/") return "home";
-    if (location.pathname === "/about") return "about";
     if (location.pathname === "/project") return "project";
     return "unknown";
   }, [location.pathname]);

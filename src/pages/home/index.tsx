@@ -1,32 +1,34 @@
-import LogoLarge from "@/../public/image/logo/logo_large.gif";
-import Navbar from "@/components/common/Navbar";
+import Logo from "@/../public/image/logo/logo.png";
+// import Navbar from "@/components/common/Navbar";
 
 function HomePage() {
   return (
-    <main className="h-screen bg-zinc-900 text-white">
-      <img src={LogoLarge} className="w-full pt-3 mb-2" alt="Logo"></img>
-      <div className="flex justify-between px-8">
-        <p className="text-sm">
-          Chaewon Yu <br />
-          <br />
-          A graphic Designer based in Seoul <br />
-          Seoul National University BA Visual Design BA Information and Culture
-          Technology Studies <br />
-          {/* Internship at Vive Studios Lab 2023 */}
-        </p>
-        <div className="content-center">
-          <Navbar currentTab="home" />
+    <main className="h-screen bg-[#1e1e1e] text-white content-center px-20">
+      <div className="flex justify-between">
+        <img src={Logo} className="h-[24rem]" alt="Logo"></img>
+        <div className="h-[24rem] flex flex-col gap-20">
+          <div className="-rotate-6">
+            <p className="text-lg typewriter-bold pb-2">About</p>
+            <p className="text-[0.8125rem] sohne-light">
+              Chaewon Yu / A graphic designer based in Seoul <br />
+              Seoul National University <br /> BA Visual Design & BA Information
+              and Culture Technology Studies <br />
+              Internship at Vive Studios Lab 2023
+            </p>
+          </div>
+          <div className="rotate-3">
+            <p className="text-lg typewriter-bold">Contact</p>
+            <p className="text-[0.8125rem] sohne-light">
+              Email / kidbean02@snu.ac.kr <br />
+              Github / coco-ball <br />
+              Instagram / @co_lorem
+            </p>
+          </div>
         </div>
+        {/* <div className="content-center">
+          <Navbar currentTab="home" />
+        </div> */}
       </div>
-      {/* center text */}
-      {/* <p className="text-zinc-900 absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-70%] text-sm text-center tracking-wider">
-        Chaewon Yu <br />
-        <br />
-        A graphic Designer based in Seoul <br />
-        Seoul National University <br /> BA Visual Design BA Information and
-        Culture Technology Studies <br />
-        Internship at Vive Studios Lab 2023
-      </p> */}
     </main>
   );
 }

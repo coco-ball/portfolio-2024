@@ -46,8 +46,19 @@ body {
 }
 
 @layer base {
-  .typewriter {
+  .sohne-light {
+    font-family: "SohneLight";
+    letter-spacing: 0.0175rem;
+  }
+
+  .typewriter-regular {
     font-family: "TypewriterRegular";
+    letter-spacing: 0.0175rem;
+  }
+
+  .typewriter-bold {
+    font-family: "TypewriterBold";
+    letter-spacing: 0.0175rem;
   }
 
   .button {

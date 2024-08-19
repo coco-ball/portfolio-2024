@@ -12,12 +12,6 @@ export default function Navbar({ currentTab }: NavbarProps) {
         Home
       </Link>
       <Link
-        to="/about"
-        className={`button ${currentTab === "about" ? "current" : ""}`}
-      >
-        About
-      </Link>
-      <Link
         to="/project"
         className={`button ${currentTab === "project" ? "current" : ""}`}
       >

@@ -1,5 +1,5 @@
 import ProjectDetail from "@/components/project/ProjectDetail";
-import projectList from "@/data/projectdata";
+import ProjectList from "@/components/project/ProjectList";
 import { useState } from "react";
 
 export type Project = {
@@ -21,19 +21,12 @@ export default function ProjectPage() {
 
   return (
     <div className="grid grid-cols-4 gap-3">
-      <ul className="text-sm -rotate-6 absolute left-16 top-32 w-60">
-        {projectList.map((project: Project, idx) => (
-          <div
-            className={`button ${selectedProject === project ? "current" : ""}`}
-            key={idx}
-            onClick={() => {
-              setSelectedProject(project);
-            }}
-          >
-            {project.name}
-          </div>
-        ))}
-      </ul>
+      <div className="-rotate-6 absolute left-16 top-32 ">
+        <ProjectList
+          selectedProject={selectedProject}
+          setSelectedProject={setSelectedProject}
+        ></ProjectList>
+      </div>
       <div className="col-start-2 pt-14 h-screen overflow-y-scroll">
         <ProjectDetail selectedProject={selectedProject}></ProjectDetail>
       </div>
