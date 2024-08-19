@@ -14,10 +14,10 @@ const projectList = [
     engDescription:
       "Mindly is an Emotional-responsive Meditation Metaverse Based on Computer Vision AI Model. Under two professors, we conducted the research with six team members, wrote a thesis, and presented it at the HCI Conference. We built a brand identity and produced service guide banners and brochures.",
     korDescription:
-      "Mindly는 컴퓨터비전 AI모델을 활용한 감정반응형 명상공간 메타버스입니다. 교수님 2분의 지도 아래 팀원 6인과 해당 연구를 진행, 논문을 작 성하여 HCI 학회에서 발표하였습니다. 브랜드 아이덴티티를 구축하고 서비스 가이드 배너 및 브로셔를 제작하였습니다.",
+      "Mindly는 컴퓨터비전 AI모델을 활용한 감정반응형 명상공간 메타버스입니다. 교수님 2분의 지도 아래 팀원 6인과 해당 연구를 진행, 논문을 작성하여 HCI 학회에서 발표하였습니다. 브랜드 아이덴티티를 구축하고 서비스 가이드 배너 및 브로셔를 제작하였습니다.",
     mainCategory: "Service Design",
     category: "Service Design, VR, UX/UI Design", //나중에 리스트로 바꾸기
-    tools: "Unity, Adobe Premiere Pro",
+    tools: "Unity, Oculus, Adobe Premiere Pro",
     image: getImageArray("mindly", 13),
     engHonors: "Grand Prize in SK Creative Challenge at 2023 HCI Conference",
     korHonors:
@@ -73,9 +73,9 @@ const projectList = [
     year: "2023",
     link: "https://interactive-study.wafflestudio.com/projects/waffle-sans/",
     engDescription:
-      'This project was carried out by Interactive Study, in which six developers and designers are studying experimental web interactions. We created Waffle Sans modifying the variable font "Leon Sans" (Copyright© Jongmin Kim). When you write with Waffle Sans, each character turns into a Christmas wreath with leaves and ornaments. We\'d expanded Waffle Sans into a service that you can enclose Christmas wreath typography in a letter and send to others. I participated in project planning, wreath design, and UX/UI design.',
+      'This project was carried out by Interactive Study, in which six developers and designers are studying experimental web interactions. We created Waffle Sans modifying the variable font "Leon Sans" (Copyright. Jongmin Kim). When you write with Waffle Sans, each character turns into a Christmas wreath with leaves and ornaments. We\'d expanded Waffle Sans into a service that you can enclose Christmas wreath typography in a letter and send to others. I participated in project planning, wreath design, and UX/UI design.',
     korDescription:
-      '개발자 3인, 디자이너 3인이 웹의 새로운 인터랙션을 연구하는 Interactive Study에서 진행한 프로젝트로, 배리어블 폰트 "Leon Sans"(Copyright© Jongmin Kim)를 활용하여 Waffle Sans를 제작하였습니다. Waffle Sans로 글자를 쓰면 잎사귀와 여러 오나먼트가 생겨나 곧 크리스마스 리스가 됩니다. 이 크리스마스 리스 타이포그래피는 편지 속에 담아 타인에게 보낼 수 있는 서비스로 확장하였습니다. 기획 및 리스 디자인, UX/UI 디자인에 참여하였습니다.',
+      '개발자 3인, 디자이너 3인이 웹의 새로운 인터랙션을 연구하는 Interactive Study에서 진행한 프로젝트로, 배리어블 폰트 "Leon Sans"(Copyright. Jongmin Kim)를 활용하여 Waffle Sans를 제작하였습니다. Waffle Sans로 글자를 쓰면 잎사귀와 여러 오나먼트가 생겨나 곧 크리스마스 리스가 됩니다. 이 크리스마스 리스 타이포그래피는 편지 속에 담아 타인에게 보낼 수 있는 서비스로 확장하였습니다. 기획 및 리스 디자인, UX/UI 디자인에 참여하였습니다.',
     mainCategory: "Website",
     category: "Website, Service Design, Typography",
     tools: "Figma, Adobe Illustrator",
@@ -140,6 +140,21 @@ const projectList = [
     category: "Video, Collage",
     tools: "Adobe Photoshop, Illustrator, Stable Diffusion",
     image: getImageArray("salvadordali", 24),
+    engHonors: "",
+    korHonors: "",
+  },
+  {
+    name: "Seeya",
+    year: "2024",
+    link: "",
+    engDescription:
+      'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
+    korDescription:
+      "Perfume은 영화 “향수 : 어느 살인자의 이야기”의 오프닝 시퀀스입니다. 향수를 만드는 과정을 추상적으로 묘사하기 위해 일부 씬을 제외하고 직접 촬영하였으며 보색을 활용한 색감으로 기이한 분위기를 연출하였습니다.",
+    mainCategory: "Website",
+    category: "Mobile Website, Service Design",
+    tools: "Figma, Adobe Illustrator",
+    image: getImageArray("seeya", 7),
     engHonors: "",
     korHonors: "",
   },
