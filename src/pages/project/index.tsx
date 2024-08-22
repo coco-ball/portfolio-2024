@@ -21,7 +21,7 @@ export default function ProjectPage() {
 
   return (
     <div className="grid grid-cols-4 gap-3">
-      <div className="-rotate-6 absolute left-16 top-32 ">
+      <div className="-rotate-6 absolute left-16 top-32 text-sm">
         <ProjectList
           selectedProject={selectedProject}
           setSelectedProject={setSelectedProject}

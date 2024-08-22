@@ -1,6 +1,5 @@
 import projectData from "@/data/projectdata";
 import { Project } from "@/pages/project";
-// import { useState } from "react";
 
 type ProjectListProps = {
   selectedProject: Project | null;
@@ -12,7 +11,7 @@ export default function ProjectList({
   setSelectedProject,
 }: ProjectListProps) {
   return (
-    <ul className="text-sm -rotate-6 absolute left-16 top-32 ">
+    <ul>
       {projectData.map((project: Project, idx) => (
         <div
           className={`button ${selectedProject === project ? "current" : ""}`}

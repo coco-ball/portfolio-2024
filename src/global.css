@@ -53,12 +53,24 @@ body {
 
   .typewriter-regular {
     font-family: "TypewriterRegular";
-    letter-spacing: 0.0175rem;
+    letter-spacing: 0.0275rem;
   }
 
   .typewriter-bold {
     font-family: "TypewriterBold";
     letter-spacing: 0.0175rem;
+  }
+
+  .home-category {
+    @apply text-base typewriter-bold mb-2;
+  }
+
+  .home-content {
+    @apply text-[0.8125rem] sohne-light min-w-80;
+  }
+
+  .hover-rotate {
+    @apply transition-transform hover:rotate-0;
   }
 
   .button {
