@@ -54,6 +54,21 @@ const projectData = [
     korHonors: null,
   },
   {
+    name: "Perfume",
+    year: "2023",
+    link: "",
+    engDescription:
+      'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
+    korDescription:
+      "Perfume은 영화 “향수 : 어느 살인자의 이야기”의 오프닝 시퀀스입니다. 향수를 만드는 과정을 추상적으로 묘사하기 위해 일부 씬을 제외하고 직접 촬영하였으며 보색을 활용한 색감으로 기이한 분위기를 연출하였습니다.",
+    mainCategory: "Video, 1min 52sec",
+    category: "Video, Production",
+    tools: "Adobe Premiere Pro, After Effect",
+    image: getImageArray("perfume", 11),
+    engHonors: "",
+    korHonors: "",
+  },
+  {
     name: "Flood Vulnerability Map for Banjihas in Seoul",
     year: "2023",
     link: "https://kdja-visualization-dviz.vercel.app/waterMap.html",
@@ -80,6 +95,21 @@ const projectData = [
     category: "Website, Service Design, Typography",
     tools: "Figma, Adobe Illustrator",
     image: getImageArray("wafflesans", 4),
+    engHonors: "",
+    korHonors: "",
+  },
+  {
+    name: "— 地獄のメカニカル・トレーニング・フレーズ",
+    year: "2023",
+    link: "",
+    engDescription:
+      'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
+    korDescription:
+      "Perfume은 영화 “향수 : 어느 살인자의 이야기”의 오프닝 시퀀스입니다. 향수를 만드는 과정을 추상적으로 묘사하기 위해 일부 씬을 제외하고 직접 촬영하였으며 보색을 활용한 색감으로 기이한 분위기를 연출하였습니다.",
+    mainCategory: "Poster, 594 x 841mm",
+    category: "Poster, Typography, Graphic Design",
+    tools: "Adobe Photoshop, Illustrator",
+    image: getImageArray("seeya", 7),
     engHonors: "",
     korHonors: "",
   },
@@ -114,21 +144,6 @@ const projectData = [
     korHonors: "",
   },
   {
-    name: "Perfume",
-    year: "2023",
-    link: "",
-    engDescription:
-      'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
-    korDescription:
-      "Perfume은 영화 “향수 : 어느 살인자의 이야기”의 오프닝 시퀀스입니다. 향수를 만드는 과정을 추상적으로 묘사하기 위해 일부 씬을 제외하고 직접 촬영하였으며 보색을 활용한 색감으로 기이한 분위기를 연출하였습니다.",
-    mainCategory: "Video, 1min 52sec",
-    category: "Video, Production",
-    tools: "Adobe Premiere Pro, After Effect",
-    image: getImageArray("perfume", 11),
-    engHonors: "",
-    korHonors: "",
-  },
-  {
     name: "Salvador Dali",
     year: "2023",
     link: "",
@@ -144,6 +159,21 @@ const projectData = [
     korHonors: "",
   },
   {
+    name: "Code-based Artworks",
+    year: "2023",
+    link: "",
+    engDescription:
+      'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
+    korDescription:
+      "Perfume은 영화 “향수 : 어느 살인자의 이야기”의 오프닝 시퀀스입니다. 향수를 만드는 과정을 추상적으로 묘사하기 위해 일부 씬을 제외하고 직접 촬영하였으며 보색을 활용한 색감으로 기이한 분위기를 연출하였습니다.",
+    mainCategory: "Coded illustration",
+    category: "Coded Illustration, Graphic Design",
+    tools: "JS Canvas, p5.js",
+    image: getImageArray("seeya", 7),
+    engHonors: "",
+    korHonors: "",
+  },
+  {
     name: "Seeya",
     year: "2024",
     link: "",
@@ -154,6 +184,51 @@ const projectData = [
     mainCategory: "Website",
     category: "Mobile Website, Service Design",
     tools: "Figma, Adobe Illustrator",
+    image: getImageArray("seeya", 7),
+    engHonors: "",
+    korHonors: "",
+  },
+  {
+    name: "Breakaway: The Funeral of Cycle",
+    year: "2023",
+    link: "",
+    engDescription:
+      'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
+    korDescription:
+      "Perfume은 영화 “향수 : 어느 살인자의 이야기”의 오프닝 시퀀스입니다. 향수를 만드는 과정을 추상적으로 묘사하기 위해 일부 씬을 제외하고 직접 촬영하였으며 보색을 활용한 색감으로 기이한 분위기를 연출하였습니다.",
+    mainCategory: "Book, 148 x 210mm",
+    category: "Coded Illustration, Graphic Design",
+    tools: "JS Canvas, p5.js",
+    image: getImageArray("seeya", 7),
+    engHonors: "",
+    korHonors: "",
+  },
+  {
+    name: "Find Waffle",
+    year: "2024",
+    link: "",
+    engDescription:
+      'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
+    korDescription:
+      "Perfume은 영화 “향수 : 어느 살인자의 이야기”의 오프닝 시퀀스입니다. 향수를 만드는 과정을 추상적으로 묘사하기 위해 일부 씬을 제외하고 직접 촬영하였으며 보색을 활용한 색감으로 기이한 분위기를 연출하였습니다.",
+    mainCategory: "Book, 148 x 210mm",
+    category: "Coded Illustration, Graphic Design",
+    tools: "JS Canvas, p5.js",
+    image: getImageArray("seeya", 7),
+    engHonors: "",
+    korHonors: "",
+  },
+  {
+    name: "ISC Student Work Exhibition",
+    year: "2024",
+    link: "",
+    engDescription:
+      'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
+    korDescription:
+      "Perfume은 영화 “향수 : 어느 살인자의 이야기”의 오프닝 시퀀스입니다. 향수를 만드는 과정을 추상적으로 묘사하기 위해 일부 씬을 제외하고 직접 촬영하였으며 보색을 활용한 색감으로 기이한 분위기를 연출하였습니다.",
+    mainCategory: "Book, 148 x 210mm",
+    category: "Coded Illustration, Graphic Design",
+    tools: "JS Canvas, p5.js",
     image: getImageArray("seeya", 7),
     engHonors: "",
     korHonors: "",

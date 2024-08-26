@@ -48,7 +48,7 @@ body {
 @layer base {
   .sohne-light {
     font-family: "SohneLight";
-    letter-spacing: 0.0175rem;
+    letter-spacing: 0.012rem;
   }
 
   .typewriter-regular {
@@ -62,7 +62,7 @@ body {
   }
 
   .home-category {
-    @apply text-base typewriter-bold mb-2;
+    @apply text-base mb-2;
   }
 
   .home-content {

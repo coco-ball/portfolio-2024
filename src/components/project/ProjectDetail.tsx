@@ -12,13 +12,13 @@ export default function ProjectDetail({ selectedProject }: ProjectDetailProps) {
         {selectedProject?.name}
       </div>
       <div className="text-sm mt-5">
-        <div className="flex gap-8">
-          <p className="w-16">category</p>
-          <p className="min-w-40">{selectedProject?.category}</p>
+        <div className="flex gap-7">
+          <p className="w-20">category</p>
+          <p className="w-full">{selectedProject?.category}</p>
         </div>
-        <div className="flex gap-8">
-          <p className="w-16">tools</p>
-          <p className="min-w-40">{selectedProject?.tools}</p>
+        <div className="flex gap-7">
+          <p className="w-20">tools</p>
+          <p className="w-full">{selectedProject?.tools}</p>
         </div>
       </div>
       <div className="text-sm mt-20">

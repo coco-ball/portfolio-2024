@@ -34,9 +34,16 @@ const Spiral = () => {
     }
   });
 
+  const spiralColor = useMemo(() => {
+    const r = Math.random();
+    const g = Math.random();
+    const b = Math.random();
+    return new THREE.Color(r, g, b);
+  }, []);
+
   return (
     <mesh ref={meshRef} geometry={tubeGeometry} rotation={[Math.PI / 2, 0, 0]}>
-      <meshStandardMaterial color="white" />
+      <meshStandardMaterial color={spiralColor} />
     </mesh>
   );
 };
