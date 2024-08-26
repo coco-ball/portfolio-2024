@@ -1,4 +1,3 @@
-// import Logo from "@/../public/image/logo/logo_thin.png";
 import ProjectList from "@/components/project/ProjectList";
 // import Navbar from "@/components/common/Navbar";
 import { useMemo } from "react";
@@ -7,9 +6,12 @@ import { OrbitControls } from "@react-three/drei";
 import Spiral from "@/components/common/spiral";
 
 function HomePage() {
-  const x = Math.random() * 1200;
-  const y = Math.random() * 800 - 400;
-  const z = Math.random() * 800 - 400;
+  const cameraPosition: [number, number, number] = useMemo(() => {
+    const x = Math.random() * 1200;
+    const y = Math.random() * 800 - 400;
+    const z = Math.random() * 800 - 400;
+    return [x, y, z]; // 배열로 반환
+  }, []);
 
   const bgColor = useMemo(() => {
     const r = Math.floor(Math.random() * 256); // 0~255 값 생성
@@ -26,7 +28,7 @@ function HomePage() {
           height: "100vh",
           position: "absolute",
         }}
-        camera={{ position: [x, y, z], fov: 75, near: 1, far: 10000 }}
+        camera={{ position: cameraPosition, fov: 75, near: 1, far: 10000 }}
         gl={{ antialias: true }}
       >
         <ambientLight intensity={5} />
@@ -40,22 +42,22 @@ function HomePage() {
         <Spiral />
       </Canvas>
       {/* <main className="h-screen flex flex-wrap justify-between content-center mx-20 text-white mix-blend-exclusion"> */}
-      <main className="h-screen flex flex-wrap justify-between pt-24 mx-24 text-white mix-blend-exclusion">
+      <main className="h-screen grid grid-cols-2 gap-3 mx-24 text-black ">
         {/* <img src={Logo} className="h-[20rem]" alt="Logo"></img> */}
-        <div className="-rotate-6 mt-auto mb-24">
-          <p className="home-category">Project</p>
+        <div className="-rotate-6 mt-auto mb-28">
+          <div className="home-category">Project</div>
           <div className="home-content">
             <ProjectList></ProjectList>
           </div>
         </div>
-        <div className="h-[20rem] flex flex-col gap-14 -rotate-6">
+        <div className="h-[20rem] flex flex-col gap-14 mt-12 -rotate-6">
           <div>
             <p className="home-category">About</p>
             <p className="home-content">
               Chaewon Yu / A graphic designer based in Seoul <br />
               Seoul National University <br /> BA Visual Design & BA Information
               and Culture Technology Studies <br />
-              Internship at Vive Studios Lab 2023
+              UI Designer Vive Studios Lab 2023
             </p>
           </div>
           <div>

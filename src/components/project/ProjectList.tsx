@@ -14,7 +14,9 @@ export default function ProjectList({
     <ul>
       {projectData.map((project: Project, idx) => (
         <div
-          className={`button ${selectedProject === project ? "current" : ""}`}
+          className={`w-fit button ${
+            selectedProject === project ? "current" : ""
+          }`}
           key={idx}
           onClick={() => {
             setSelectedProject(project);

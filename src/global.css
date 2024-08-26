@@ -41,6 +41,7 @@ body {
   height: 100vh;
   font-family: "SohneRegular";
   letter-spacing: 0.0075rem;
+  user-select: none;
   /* font-family: "TypewriterRegular"; */
   /* font-family: "Overpass Mono", monospace; */
 }
