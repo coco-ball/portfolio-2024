@@ -39,6 +39,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  color: black;
   font-family: "SohneRegular";
   letter-spacing: 0.0075rem;
   user-select: none;

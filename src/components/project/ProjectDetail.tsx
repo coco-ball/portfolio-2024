@@ -1,4 +1,4 @@
-import { Project } from "@/pages/home";
+import { Project } from "@/app";
 
 type ProjectDetailProps = { selectedProject: Project | null };
 

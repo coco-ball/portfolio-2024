@@ -1,5 +1,5 @@
 import ProjectDetail from "@/components/project/ProjectDetail";
-import { Project } from "@/pages/home";
+import { Project } from "@/app";
 
 type ProjectProps = {
   selectedProject: Project | null;
