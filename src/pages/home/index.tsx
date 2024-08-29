@@ -1,11 +1,10 @@
 import ProjectList from "@/components/project/ProjectList";
 // import Navbar from "@/components/common/Navbar";
 import { useEffect, useMemo, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import Spiral from "@/components/common/spiral";
+import * as THREE from "three";
 import About from "@/components/common/About";
 import ProjectInfo from "@/components/common/ProjectInfo";
+import SpiralCanvas from "@/components/common/SpiralCanvas";
 
 export type Project = {
   name: string;
@@ -34,14 +33,21 @@ function HomePage() {
     const x = Math.random() * 1150;
     const y = Math.random() * 800 - 400;
     const z = Math.random() * 800 - 400;
-    return [x, y, z]; // 배열로 반환
+    return [x, y, z];
   }, []);
 
-  const bgColor = useMemo(() => {
-    const r = Math.floor(Math.random() * 256) + 20; // 0~255 값 생성
+  const bgColor: string = useMemo(() => {
+    const r = Math.floor(Math.random() * 256) + 20;
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256) + 20;
-    return `rgb(${r}, ${g}, ${b})`; // CSS용 rgb 문자열 생성
+    return `rgb(${r}, ${g}, ${b})`;
+  }, []);
+
+  const spiralColor: THREE.Color = useMemo(() => {
+    const r = Math.random();
+    const g = Math.random();
+    const b = Math.random();
+    return new THREE.Color(r, g, b);
   }, []);
 
   useEffect(() => {
@@ -50,29 +56,12 @@ function HomePage() {
 
   return (
     <div>
-      <Canvas
-        style={{
-          background: bgColor,
-          height: "100vh",
-          position: "absolute",
-          width: isSelected ? "23.5%" : "100%",
-          transitionProperty: "all",
-          transitionTimingFunction: "cubic - bezier(0.4, 0, 0.2, 1)",
-          transitionDuration: "500ms",
-        }}
-        camera={{ position: cameraPosition, fov: 75, near: 1, far: 10000 }}
-        gl={{ antialias: true }}
-      >
-        <ambientLight intensity={4} />
-        {/* <directionalLight position={[10, 10, 10]} intensity={1.5} />{" "} */}
-        <OrbitControls
-          rotateSpeed={0.17}
-          zoomSpeed={0.17}
-          // panSpeed={0.3}
-          // enablePan={true}
-        />
-        <Spiral />
-      </Canvas>
+      <SpiralCanvas
+        cameraPosition={cameraPosition}
+        bgColor={bgColor}
+        spiralColor={spiralColor}
+        canvasWidth="100%"
+      />
       {/* <main className="h-screen flex flex-wrap justify-between content-center mx-20 text-white mix-blend-exclusion"> */}
       <main className="h-screen grid grid-cols-4 text-black ">
         {/* <img src={Logo} className="h-[20rem]" alt="Logo"></img> */}
