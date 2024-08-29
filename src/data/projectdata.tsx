@@ -35,11 +35,10 @@ const projectData = [
     category: "Identity Design, Graphic Design",
     tools: "Adobe Photoshop, Illustrator, Indesign",
     image: getImageArray("sfactory", 27),
-    engHonors: null,
-    korHonors: null,
   },
   {
     name: "SNU Computer Science &\nEngineering Website",
+    shortenName: "SNU CSE Website",
     year: "2023-2024",
     link: "https://cse.snu.ac.kr/",
     engDescription:
@@ -50,8 +49,6 @@ const projectData = [
     category: "Website, UX/UI Design",
     tools: "Figma, Adobe Illustrator",
     image: getImageArray("snucse", 11),
-    engHonors: null,
-    korHonors: null,
   },
   {
     name: "Perfume",
@@ -65,11 +62,10 @@ const projectData = [
     category: "Video, Production",
     tools: "Adobe Premiere Pro, After Effect",
     image: getImageArray("perfume", 11),
-    engHonors: "",
-    korHonors: "",
   },
   {
     name: "Flood Vulnerability Map for Banjihas in Seoul",
+    shortenName: "Flood Vulnerability Map for Banjihas",
     year: "2023",
     link: "https://kdja-visualization-dviz.vercel.app/waterMap.html",
     engDescription:
@@ -95,11 +91,9 @@ const projectData = [
     category: "Website, Service Design, Typography",
     tools: "Figma, Adobe Illustrator",
     image: getImageArray("wafflesans", 4),
-    engHonors: "",
-    korHonors: "",
   },
   {
-    name: "— 地獄のメカニカル・トレーニング・フレーズ",
+    name: "地獄のメカニカル・トレーニング・フレーズ",
     year: "2023",
     link: "",
     engDescription:
@@ -110,11 +104,10 @@ const projectData = [
     category: "Poster, Typography, Graphic Design",
     tools: "Adobe Photoshop, Illustrator",
     image: getImageArray("seeya", 7),
-    engHonors: "",
-    korHonors: "",
   },
   {
     name: "The Physiological Process of Tattooing",
+    shortenName: "Physiological Process of Tattooing",
     year: "2023",
     link: "",
     engDescription:
@@ -125,8 +118,6 @@ const projectData = [
     category: "Video, Animation, Illustration",
     tools: "Adobe Photoshop, After Effect",
     image: getImageArray("tattooing", 12),
-    engHonors: "",
-    korHonors: "",
   },
   {
     name: "BooYoo",
@@ -140,8 +131,6 @@ const projectData = [
     category: "Video, Collage",
     tools: "Adobe Photoshop, After Effect",
     image: getImageArray("booyoo", 3),
-    engHonors: "",
-    korHonors: "",
   },
   {
     name: "Salvador Dali",
@@ -155,8 +144,6 @@ const projectData = [
     category: "Video, Collage",
     tools: "Adobe Photoshop, Illustrator, Stable Diffusion",
     image: getImageArray("salvadordali", 24),
-    engHonors: "",
-    korHonors: "",
   },
   {
     name: "Code-based Artworks",
@@ -170,8 +157,6 @@ const projectData = [
     category: "Coded Illustration, Graphic Design",
     tools: "JS Canvas, p5.js",
     image: getImageArray("seeya", 7),
-    engHonors: "",
-    korHonors: "",
   },
   {
     name: "Seeya",
@@ -185,8 +170,6 @@ const projectData = [
     category: "Mobile Website, Service Design",
     tools: "Figma, Adobe Illustrator",
     image: getImageArray("seeya", 7),
-    engHonors: "",
-    korHonors: "",
   },
   {
     name: "Breakaway: The Funeral of Cycle",
@@ -200,8 +183,6 @@ const projectData = [
     category: "Coded Illustration, Graphic Design",
     tools: "JS Canvas, p5.js",
     image: getImageArray("seeya", 7),
-    engHonors: "",
-    korHonors: "",
   },
   {
     name: "Find Waffle",
@@ -215,8 +196,6 @@ const projectData = [
     category: "Coded Illustration, Graphic Design",
     tools: "JS Canvas, p5.js",
     image: getImageArray("seeya", 7),
-    engHonors: "",
-    korHonors: "",
   },
   {
     name: "ISC Student Work Exhibition",
@@ -230,8 +209,6 @@ const projectData = [
     category: "Coded Illustration, Graphic Design",
     tools: "JS Canvas, p5.js",
     image: getImageArray("seeya", 7),
-    engHonors: "",
-    korHonors: "",
   },
 ];
 

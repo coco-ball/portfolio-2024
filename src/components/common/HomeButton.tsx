@@ -8,12 +8,12 @@ export default function HomeButton() {
   };
 
   return (
-    <div className="absolute right-3 bottom-2">
+    <div className="absolute right-3 bottom-2 ">
       <a href="/" onClick={handleClick}>
         <img
           src={Logo}
           alt="Home"
-          className="w-12 -rotate-6 ml-auto mr-40 mix-blend-exclusion"
+          className="w-12 -rotate-6 ml-auto mr-40 mix-blend-exclusion "
         />
       </a>
       <p className="sohne-light text-black text-right text-xs mt-32 ">

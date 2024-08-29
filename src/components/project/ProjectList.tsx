@@ -1,5 +1,5 @@
 import projectData from "@/data/projectdata";
-import { Project } from "@/pages/project";
+import { Project } from "@/pages/home";
 
 type ProjectListProps = {
   selectedProject: Project | null;
@@ -22,7 +22,7 @@ export default function ProjectList({
             setSelectedProject(project);
           }}
         >
-          {project.name}
+          {project.shortenName ? project.shortenName : project.name}
         </div>
       ))}
     </ul>

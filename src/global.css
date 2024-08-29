@@ -46,6 +46,10 @@ body {
   /* font-family: "Overpass Mono", monospace; */
 }
 
+* {
+  scrollbar-width: none;
+}
+
 @layer base {
   .sohne-light {
     font-family: "SohneLight";

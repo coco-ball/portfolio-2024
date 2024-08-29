@@ -1,10 +1,12 @@
-import { Project } from "@/pages/project";
+import { Project } from "@/pages/home";
 
 type ProjectDetailProps = { selectedProject: Project | null };
 
 export default function ProjectDetail({ selectedProject }: ProjectDetailProps) {
   return (
-    <div className={"mb-20 w-[20rem] " + (selectedProject ? "" : "hidden")}>
+    <div
+      className={"mb-20 pt-14 pl-3 pr-8" + (selectedProject ? "" : "hidden")}
+    >
       <div className="project-summary">
         {selectedProject?.year + ", " + selectedProject?.mainCategory}
       </div>
@@ -21,7 +23,7 @@ export default function ProjectDetail({ selectedProject }: ProjectDetailProps) {
           <p className="w-full">{selectedProject?.tools}</p>
         </div>
       </div>
-      <div className="text-sm mt-20">
+      <div className="text-sm mt-20 text-justify hyphens-auto">
         <p className="mb-5">{selectedProject?.engDescription}</p>
         <p>{selectedProject?.korDescription}</p>
       </div>

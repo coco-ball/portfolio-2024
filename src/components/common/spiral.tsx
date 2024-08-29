@@ -25,7 +25,8 @@ const Spiral = () => {
   }, []);
 
   const tubeGeometry = useMemo(() => {
-    return new THREE.TubeGeometry(path, 1500, 4, 8, false);
+    return new THREE.TubeGeometry(path, 1500, 5, 8, false);
+    // return new THREE.TubeGeometry(path, 1500, 40, 20, false);
   }, [path]);
 
   useFrame(() => {
