@@ -74,11 +74,11 @@ function HomePage() {
         <Spiral />
       </Canvas>
       {/* <main className="h-screen flex flex-wrap justify-between content-center mx-20 text-white mix-blend-exclusion"> */}
-      <main className="h-screen grid grid-cols-4  text-black ">
+      <main className="h-screen grid grid-cols-4 text-black ">
         {/* <img src={Logo} className="h-[20rem]" alt="Logo"></img> */}
         <div
-          className={`col-span-1 -rotate-6 mt-auto mb-24 ${
-            isSelected ? "pl-12" : "pl-24"
+          className={`col-span-1 -rotate-6 mt-auto mb-16 ${
+            isSelected ? "pl-14" : "pl-40"
           } transition-all duration-700`}
         >
           <div className="home-category">Project</div>
