@@ -1,34 +1,47 @@
-import ProjectDetail from "@/components/project/ProjectDetail";
-import ProjectList from "@/components/project/ProjectList";
-import { useState } from "react";
-
-export type Project = {
-  name: string;
-  year: string;
-  link: string;
-  engDescription: string;
-  korDescription: string;
-  mainCategory: string;
-  category: string;
-  tools: string;
-  image: string[];
-  engHonors: string | null;
-  korHonors: string | null;
-};
+import { useProject } from "@/contexts/ProjectContext";
 
 export default function ProjectPage() {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const { selectedProject } = useProject();
 
   return (
-    <div className="grid grid-cols-4 gap-3">
-      <div className="-rotate-6 absolute left-16 top-32 text-sm">
-        <ProjectList
-          selectedProject={selectedProject}
-          setSelectedProject={setSelectedProject}
-        ></ProjectList>
-      </div>
-      <div className="col-start-2 pt-14 h-screen overflow-y-scroll">
-        <ProjectDetail selectedProject={selectedProject}></ProjectDetail>
+    <>
+      <div className=" col-span-1 h-screen overflow-y-scroll">
+        <div
+          className={
+            "mb-20 pt-14 pl-3 pr-8" + (selectedProject ? "" : "hidden")
+          }
+        >
+          <div className="project-summary">
+            {selectedProject?.year + ", " + selectedProject?.mainCategory}
+          </div>
+          <div className="text-[3.25rem] leading-[1.15] mt-2">
+            {selectedProject?.name}
+          </div>
+          <div className="text-sm mt-5">
+            <div className="flex gap-7">
+              <p className="w-20">category</p>
+              <p className="w-full">{selectedProject?.category}</p>
+            </div>
+            <div className="flex gap-7">
+              <p className="w-20">tools</p>
+              <p className="w-full">{selectedProject?.tools}</p>
+            </div>
+          </div>
+          <div className="text-sm mt-20 text-justify hyphens-auto">
+            <p className="mb-5">{selectedProject?.engDescription}</p>
+            <p>{selectedProject?.korDescription}</p>
+          </div>
+          {selectedProject?.engHonors && (
+            <div className="text-xs mt-8 content-center p-0.5 w-32 h-32 bg-gray-300 text-white overflow-clip">
+              <p className="-rotate-6 w-[7.75rem]">
+                {selectedProject?.engHonors}
+                <br />
+                <br />
+                {selectedProject?.korHonors}
+              </p>
+            </div>
+          )}
+        </div>
       </div>
       <ul className="col-span-2 h-screen overflow-y-scroll">
         {selectedProject?.image.map((img, idx) => (
@@ -40,6 +53,6 @@ export default function ProjectPage() {
           />
         ))}
       </ul>
-    </div>
+    </>
   );
 }

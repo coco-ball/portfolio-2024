@@ -1,16 +1,11 @@
 import { useNavigate } from "react-router-dom";
+import { useProject } from "@/contexts/ProjectContext";
 import projectData from "@/data/projectdata";
 import { Project } from "@/app";
 
-type ProjectListProps = {
-  selectedProject: Project | null;
-  setSelectedProject: React.Dispatch<React.SetStateAction<Project | null>>;
-};
+export default function ProjectList() {
+  const { selectedProject, setSelectedProject } = useProject();
 
-export default function ProjectList({
-  selectedProject,
-  setSelectedProject,
-}: ProjectListProps) {
   const navigate = useNavigate();
   const handleProjectClick = (project: Project) => {
     setSelectedProject(project);

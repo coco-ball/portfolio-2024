@@ -1,15 +1,10 @@
 // src/SpiralCanvas.tsx
 import { useRef, useMemo } from "react";
 import { useFrame, Canvas } from "@react-three/fiber";
+import { useProject } from "@/contexts/ProjectContext";
+import { useCanvas } from "@/contexts/CanvasContext";
 import { OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
-
-type SpiralCanvasProps = {
-  cameraPosition: [number, number, number];
-  bgColor: string;
-  spiralColor: THREE.Color;
-  canvasWidth: string;
-};
 
 const SpiralMesh = ({ color }: { color: THREE.Color }) => {
   const meshRef = useRef<THREE.Mesh>(null);
@@ -50,19 +45,17 @@ const SpiralMesh = ({ color }: { color: THREE.Color }) => {
   );
 };
 
-export default function SpiralCanvas({
-  cameraPosition,
-  bgColor,
-  spiralColor,
-  canvasWidth,
-}: SpiralCanvasProps) {
+export default function SpiralCanvas() {
+  const { selectedProject } = useProject();
+  const { cameraPosition, bgColor, spiralColor } = useCanvas();
+
   return (
     <Canvas
       style={{
         background: bgColor,
         height: "100vh",
         position: "absolute",
-        width: canvasWidth,
+        width: selectedProject === null ? "100%" : "23.5%",
         transitionProperty: "all",
         transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
         transitionDuration: "500ms",
