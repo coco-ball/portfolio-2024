@@ -1,11 +1,19 @@
+import { useEffect, useRef } from "react";
 import { useProject } from "@/contexts/ProjectContext";
 
 export default function ProjectPage() {
   const { selectedProject } = useProject();
+  const imageContainerRef = useRef<HTMLUListElement | null>(null);
+
+  useEffect(() => {
+    if (imageContainerRef.current) {
+      imageContainerRef.current.scrollTo(0, 0);
+    }
+  }, [selectedProject]);
 
   return (
     <>
-      <div className=" col-span-1 h-screen overflow-y-scroll">
+      <div className="col-span-1 overflow-y-scroll">
         <div
           className={
             "mb-20 pt-14 pl-3 pr-8" + (selectedProject ? "" : "hidden")
@@ -43,7 +51,7 @@ export default function ProjectPage() {
           )}
         </div>
       </div>
-      <ul className="col-span-2 h-screen overflow-y-scroll">
+      <ul ref={imageContainerRef} className="col-span-2 overflow-y-scroll">
         {selectedProject?.image.map((img, idx) => (
           <img
             src={`/image/project/${img}`}

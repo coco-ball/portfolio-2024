@@ -14,7 +14,7 @@ export default function HomeButton() {
   };
 
   return (
-    <div className="absolute right-3 bottom-2 ">
+    <div className="absolute right-3 bottom-1 ">
       <a href="/" onClick={resetToHome}>
         <img
           src={Logo}
