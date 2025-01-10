@@ -92,4 +92,29 @@ body {
   .showThumbnail:hover .thumbnail {
     @apply block;
   }
+
+  /* .canvas-home {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+  }
+
+  .canvas-project {
+    position: absolute;
+    height: 25vh;
+    width: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+  }
+
+  @media screen and (min-width: 768px) {
+    .canvas-project {
+      height: 100vh;
+      width: 23.5%;
+    }
+  } */
 }

@@ -2,6 +2,7 @@ const getImageArray = (name: string, imgNum: number): string[] => {
   const imageArray = [];
   for (let i = 1; i < imgNum + 1; i++) {
     imageArray.push(`${name}/${i}.png`);
+    imageArray.push(`${name}/${i}.gif`); //gif 추가 로직 고치기
   }
   return imageArray;
 };
@@ -48,7 +49,7 @@ const projectData = [
     mainCategory: "Website",
     category: "Website, UX/UI Design",
     tools: "Figma, Adobe Illustrator",
-    image: getImageArray("snucse", 11),
+    image: getImageArray("snucse", 12),
   },
   {
     name: "Perfume",
@@ -103,7 +104,7 @@ const projectData = [
     mainCategory: "Poster, 594 x 841mm",
     category: "Poster, Typography, Graphic Design",
     tools: "Adobe Photoshop, Illustrator",
-    image: getImageArray("seeya", 7),
+    image: getImageArray("guitartraining", 4),
   },
   {
     name: "The Physiological Process of Tattooing",
@@ -156,7 +157,20 @@ const projectData = [
     mainCategory: "Coded illustration",
     category: "Coded Illustration, Graphic Design",
     tools: "JS Canvas, p5.js",
-    image: getImageArray("seeya", 7),
+    image: getImageArray("codedartworks", 4),
+  },
+  {
+    name: "WiggleWiggle Typography",
+    year: "2023",
+    link: "",
+    engDescription:
+      'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
+    korDescription:
+      "Perfume은 영화 “향수 : 어느 살인자의 이야기”의 오프닝 시퀀스입니다. 향수를 만드는 과정을 추상적으로 묘사하기 위해 일부 씬을 제외하고 직접 촬영하였으며 보색을 활용한 색감으로 기이한 분위기를 연출하였습니다.",
+    mainCategory: "Coded illustration",
+    category: "Coded Illustration, Graphic Design",
+    tools: "JS Canvas, p5.js",
+    image: getImageArray("wiggle", 2),
   },
   {
     name: "Seeya",
