@@ -51,6 +51,10 @@ export default function SpiralCanvas() {
 
   return (
     <Canvas
+      // className={selectedProject === null ? "canvas-home" : "canvas-project"}
+      // style={{
+      //   background: bgColor,
+      // }}
       style={{
         background: bgColor,
         height: "100vh",

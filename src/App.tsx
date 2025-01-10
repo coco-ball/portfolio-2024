@@ -23,7 +23,7 @@ export type Project = {
 function App() {
   return (
     <ProjectProvider>
-      <div className="h-screen grid grid-cols-4">
+      <div className="md:h-screen md:grid md:grid-cols-4">
         <CanvasProvider>
           <SpiralCanvas />
           {/* <img src={Logo} className="h-[20rem]" alt="Logo"></img> */}

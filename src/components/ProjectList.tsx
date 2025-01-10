@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useProject } from "@/contexts/ProjectContext";
 import projectData from "@/data/projectdata";
-import { Project } from "@/app";
+import { Project } from "@/App";
 
 export default function ProjectList() {
   const { selectedProject, setSelectedProject } = useProject();

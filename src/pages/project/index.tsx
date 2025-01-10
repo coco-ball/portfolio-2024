@@ -16,13 +16,13 @@ export default function ProjectPage() {
       <div className="col-span-1 overflow-y-scroll">
         <div
           className={
-            "mb-20 pt-14 pl-3 pr-8" + (selectedProject ? "" : "hidden")
+            "mb-8 md:mb-20 pt-14 pl-3 pr-8" + (selectedProject ? "" : "hidden")
           }
         >
           <div className="project-summary">
             {selectedProject?.year + ", " + selectedProject?.mainCategory}
           </div>
-          <div className="text-[3.25rem] leading-[1.15] mt-2">
+          <div className="text-[3rem] leading-[1.12] mt-2">
             {selectedProject?.name}
           </div>
           <div className="text-sm mt-5">

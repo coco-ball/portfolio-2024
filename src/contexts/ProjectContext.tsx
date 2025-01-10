@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
-import { Project } from "@/app";
+import { Project } from "@/App";
 
 type ProjectContextType = {
   selectedProject: Project | null;

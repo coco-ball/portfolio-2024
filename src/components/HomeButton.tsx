@@ -14,19 +14,23 @@ export default function HomeButton() {
   };
 
   return (
-    <div className="absolute right-3 bottom-1 ">
-      <a href="/" onClick={resetToHome}>
+    <>
+      <a
+        href="/"
+        onClick={resetToHome}
+        className="md:absolute md:left-10 md:top-10"
+      >
         <img
           src={Logo}
           alt="Home"
-          className="w-12 -rotate-6 ml-auto mr-40 mix-blend-exclusion "
+          className="md:block hidden w-12 -rotate-6 mix-blend-exclusion "
         />
       </a>
 
-      <p className="sohne-light text-black text-right text-xs mt-32 ">
+      <p className="md:absolute md:right-3 md:bottom-1 sohne-light bg-black text-gray-100 md:bg-inherit md:text-black text-right text-xs pr-1 md:pr-0 md:mt-32 ">
         Copyright 2024. ChaewonYu all rights reserved.
       </p>
-    </div>
+    </>
   );
 }
 
