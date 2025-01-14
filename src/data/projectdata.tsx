@@ -91,7 +91,7 @@ const projectData = [
     mainCategory: "Website",
     category: "Website, Service Design, Typography",
     tools: "Figma, Adobe Illustrator",
-    image: getImageArray("wafflesans", 4),
+    image: getImageArray("wafflesans", 6),
   },
   {
     name: "地獄のメカニカル・トレーニング・フレーズ",
@@ -160,19 +160,6 @@ const projectData = [
     image: getImageArray("codedartworks", 4),
   },
   {
-    name: "WiggleWiggle Typography",
-    year: "2023",
-    link: "",
-    engDescription:
-      'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
-    korDescription:
-      "Perfume은 영화 “향수 : 어느 살인자의 이야기”의 오프닝 시퀀스입니다. 향수를 만드는 과정을 추상적으로 묘사하기 위해 일부 씬을 제외하고 직접 촬영하였으며 보색을 활용한 색감으로 기이한 분위기를 연출하였습니다.",
-    mainCategory: "Coded illustration",
-    category: "Coded Illustration, Graphic Design",
-    tools: "JS Canvas, p5.js",
-    image: getImageArray("wiggle", 2),
-  },
-  {
     name: "Seeya",
     year: "2024",
     link: "",
@@ -209,7 +196,7 @@ const projectData = [
     mainCategory: "Book, 148 x 210mm",
     category: "Coded Illustration, Graphic Design",
     tools: "JS Canvas, p5.js",
-    image: getImageArray("seeya", 7),
+    image: getImageArray("findwaffle", 5),
   },
   {
     name: "ISC Student Work Exhibition",
@@ -222,7 +209,7 @@ const projectData = [
     mainCategory: "Book, 148 x 210mm",
     category: "Coded Illustration, Graphic Design",
     tools: "JS Canvas, p5.js",
-    image: getImageArray("seeya", 7),
+    image: getImageArray("iscexhibition", 5),
   },
 ];
 

@@ -16,7 +16,8 @@ export default function ProjectPage() {
       <div className="col-span-1 overflow-y-scroll">
         <div
           className={
-            "mb-8 md:mb-20 pt-14 pl-3 pr-8" + (selectedProject ? "" : "hidden")
+            // "mb-8 md:mb-20 pt-14 pl-3 pr-8" + (selectedProject ? "" : "hidden")
+            "mb-8 md:mb-20 pt-14 pl-0 pr-6" + (selectedProject ? "" : "hidden")
           }
         >
           <div className="project-summary">
