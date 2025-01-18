@@ -188,7 +188,7 @@ const projectData = [
   {
     name: "Find Waffle",
     year: "2024",
-    link: "",
+    link: "https://interactive-study.wafflestudio.com/projects/find-waffle/",
     engDescription:
       'Perfume is the opening sequence of the movie "Perfume: The Story of a Murderer". To depict the process of creating a perfume abstractly, most scenes were shot by myself, and the complementary shades were used to create a bizarre atmosphere.',
     korDescription:
@@ -196,7 +196,7 @@ const projectData = [
     mainCategory: "Book, 148 x 210mm",
     category: "Coded Illustration, Graphic Design",
     tools: "JS Canvas, p5.js",
-    image: getImageArray("findwaffle", 5),
+    image: getImageArray("findwaffle", 10),
   },
   {
     name: "ISC Student Work Exhibition",
