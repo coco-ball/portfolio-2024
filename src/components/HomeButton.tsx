@@ -17,10 +17,13 @@ export default function HomeButton() {
         href="/"
         onClick={resetToHome}
         // className="fixed w-1/4 md:w-screen md:mix-blend-exclusion right-4 top-6 md:left-10 md:top-11 z-50 transition-all hover:mix-blend-normal"
-        className={`fixed w-1/4 md:mix-blend-exclusion right-4 top-6 md:left-10 md:top-11 z-50 transition-all hover:mix-blend-normal ${
-          currentPage === "home"
-            ? "md:w-screen"
-            : "mix-blend-exclusion md:w-[21rem]"
+        // className={`fixed w-1/4 md:mix-blend-exclusion right-4 top-6 md:left-10 md:top-11 z-50 transition-all hover:mix-blend-normal ${
+        //   currentPage === "home"
+        //     ? "md:w-screen"
+        //     : "mix-blend-exclusion md:w-[21rem]"
+        // }`}
+        className={`fixed w-28 md:mix-blend-exclusion right-4 top-6 md:left-10 md:top-11 z-50 transition-all hover:mix-blend-normal ${
+          currentPage === "home" ? "" : "mix-blend-exclusion"
         }`}
       >
         <div className="transition-all home-category -rotate-6 bg-white px-1 pb-[0.05rem]">
