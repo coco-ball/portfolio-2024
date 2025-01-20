@@ -208,7 +208,7 @@ const projectData = [
     mainCategory: "Web Game",
     category: "UX/UI Design, Graphic Design, Website Development",
     tools: "React, Figma, Adobe Illustrator",
-    image: getImageArray("blockpuzzle", 3),
+    image: getImageArray("blockpuzzle", 4),
   },
 ];
 

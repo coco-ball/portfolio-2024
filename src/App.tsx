@@ -1,8 +1,9 @@
 import { Outlet } from "react-router-dom";
+import { CurrentProjectProvider } from "./contexts/CurrentPageContext";
 import { ProjectProvider } from "./contexts/ProjectContext";
 import { CanvasProvider } from "./contexts/CanvasContext";
 import SpiralCanvas from "@/components/SpiralCanvas";
-import ProjectList from "@/components/ProjectList";
+// import ProjectList from "@/components/ProjectList";
 import HomeButton from "./components/HomeButton";
 
 export type Project = {
@@ -22,17 +23,22 @@ export type Project = {
 
 function App() {
   return (
-    <ProjectProvider>
-      <div className="md:h-screen md:grid md:grid-cols-4">
-        <CanvasProvider>
-          <SpiralCanvas />
-          {/* <img src={Logo} className="h-[20rem]" alt="Logo"></img> */}
-          <ProjectList />
-          <Outlet></Outlet>
-          <HomeButton></HomeButton>
-        </CanvasProvider>
-      </div>
-    </ProjectProvider>
+    <CurrentProjectProvider>
+      <ProjectProvider>
+        <div className="md:h-screen md:grid md:grid-cols-4">
+          <CanvasProvider>
+            <SpiralCanvas />
+            {/* <img src={Logo} className="h-[20rem]" alt="Logo"></img> */}
+            {/* <ProjectList /> */}
+            <Outlet></Outlet>
+            <HomeButton></HomeButton>
+            <p className="md:absolute md:right-3 md:bottom-1 sohne-light bg-black text-gray-100 md:bg-inherit md:text-black text-right text-xs pr-1 md:pr-0 md:mt-32 ">
+              Copyright 2024. ChaewonYu all rights reserved.
+            </p>
+          </CanvasProvider>
+        </div>
+      </ProjectProvider>
+    </CurrentProjectProvider>
   );
 }
 

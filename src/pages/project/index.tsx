@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useProject } from "@/contexts/ProjectContext";
+import ProjectList from "@/components/ProjectList";
 
 export default function ProjectPage() {
   const { selectedProject } = useProject();
@@ -13,11 +14,13 @@ export default function ProjectPage() {
 
   return (
     <>
+      <ProjectList></ProjectList>
       <div className="col-span-1 overflow-y-scroll">
         <div
           className={
             // "mb-8 md:mb-20 pt-14 pl-3 pr-8" + (selectedProject ? "" : "hidden")
-            "mb-8 md:mb-20 pt-14 pl-0 pr-6" + (selectedProject ? "" : "hidden")
+            "mb-8 md:mb-20 pt-4 md:pt-14 px-4 md:pl-0 md:pr-6" +
+            (selectedProject ? "" : "hidden")
           }
         >
           <div className="project-summary">
@@ -40,7 +43,7 @@ export default function ProjectPage() {
             <p className="mb-5">{selectedProject?.engDescription}</p>
             <p>{selectedProject?.korDescription}</p>
           </div>
-          {selectedProject?.engHonors && (
+          {/* {selectedProject?.engHonors && (
             <div className="text-xs mt-8 content-center p-0.5 w-32 h-32 bg-gray-300 text-white overflow-clip">
               <p className="-rotate-6 w-[7.75rem]">
                 {selectedProject?.engHonors}
@@ -49,8 +52,24 @@ export default function ProjectPage() {
                 {selectedProject?.korHonors}
               </p>
             </div>
-          )}
+          )} */}
+          {/* {selectedProject?.engHonors && (
+            <p className="bg-black text-[#D2D2D4] text-xs p-0.5 -rotate-6 w-60 ml-auto mt-2 md:mt-20">
+              {selectedProject?.engHonors}
+              <br />
+              <br />
+              {selectedProject?.korHonors}
+            </p>
+          )} */}
         </div>
+      </div>
+      <div>
+        {selectedProject?.engHonors && (
+          <div className="text-xs sohne-light w-full h-11 px-4 pt-1 bg-black text-white overflow-clip">
+            <p className="-rotate-3">{selectedProject?.engHonors}</p>
+            <p className="-rotate-3">{selectedProject?.korHonors}</p>
+          </div>
+        )}
       </div>
       <ul ref={imageContainerRef} className="col-span-2 overflow-y-scroll">
         {selectedProject?.image.map((img, idx) => (

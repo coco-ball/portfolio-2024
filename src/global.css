@@ -39,6 +39,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  background-color: white;
   color: black;
   font-family: "SohneRegular";
   letter-spacing: 0.0075rem;
@@ -68,11 +69,11 @@ body {
   }
 
   .home-category {
-    @apply text-base mb-2;
+    @apply text-sm underline underline-offset-2;
   }
 
   .home-content {
-    @apply text-[0.8125rem] sohne-light min-w-80;
+    @apply text-[0.8125rem] sohne-light;
   }
 
   .hover-rotate {
@@ -92,29 +93,4 @@ body {
   .showThumbnail:hover .thumbnail {
     @apply block;
   }
-
-  /* .canvas-home {
-    height: 100vh;
-    position: absolute;
-    width: 100%;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 500ms;
-  }
-
-  .canvas-project {
-    position: absolute;
-    height: 25vh;
-    width: 100%;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 500ms;
-  }
-
-  @media screen and (min-width: 768px) {
-    .canvas-project {
-      height: 100vh;
-      width: 23.5%;
-    }
-  } */
 }

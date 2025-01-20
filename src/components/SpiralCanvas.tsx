@@ -1,5 +1,5 @@
 // src/SpiralCanvas.tsx
-import { useRef, useMemo } from "react";
+import { useRef, useMemo, useState, useEffect } from "react";
 import { useFrame, Canvas } from "@react-three/fiber";
 import { useProject } from "@/contexts/ProjectContext";
 import { useCanvas } from "@/contexts/CanvasContext";
@@ -48,22 +48,41 @@ const SpiralMesh = ({ color }: { color: THREE.Color }) => {
 export default function SpiralCanvas() {
   const { selectedProject } = useProject();
   const { cameraPosition, bgColor, spiralColor } = useCanvas();
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const canvasWidth =
+    isMobile && selectedProject !== null
+      ? "0%"
+      : selectedProject === null
+      ? "100%"
+      : "23.5%";
 
   return (
     <Canvas
       // className={selectedProject === null ? "canvas-home" : "canvas-project"}
-      // style={{
-      //   background: bgColor,
-      // }}
       style={{
         background: bgColor,
         height: "100vh",
         position: "absolute",
-        width: selectedProject === null ? "100%" : "23.5%",
+        width: canvasWidth,
         transitionProperty: "all",
         transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
         transitionDuration: "500ms",
       }}
+      // style={{
+      //   background: bgColor,
+      // }}
+      // className={`spiral-canvas ${
+      //   selectedProject === null ? "project-null" : "project-selected"
+      // }`}
       camera={{ position: cameraPosition, fov: 75, near: 1, far: 10000 }}
       gl={{ antialias: true }}
     >
