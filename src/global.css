@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap");
+
+@font-face {
+  font-family: "TypewriterThin";
+  src: url(@/../../public/fonts/JMHTypewriter-Thin.ttf) format("truetype");
+}
+@font-face {
+  font-family: "TypewriterRegular";
+  src: url(@/../../public/fonts/JMHTypewriter.ttf) format("truetype");
+}
+@font-face {
+  font-family: "TypewriterBold";
+  src: url(@/../../public/fonts/JMHTypewriter-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "TypewriterBlack";
+  src: url(@/../../public/fonts/JMHTypewriter-Black.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SohneLight";
+  src: url(@/../../public/fonts/Sohne-Leicht.otf) format("opentype");
+}
+@font-face {
+  font-family: "SohneRegular";
+  src: url(@/../../public/fonts/Sohne-Buch.otf) format("opentype");
+}
+@font-face {
+  font-family: "SohneMedium";
+  src: url(@/../../public/fonts/Sohne-Kräftig.otf) format("opentype");
+}
+
+body {
+  /* background-color: rgb(24 24 27);
+  color: white; */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  font-family: "SohneRegular";
+  letter-spacing: 0.0075rem;
+  user-select: none;
+  /* font-family: "TypewriterRegular"; */
+  /* font-family: "Overpass Mono", monospace; */
+}
+
+* {
+  scrollbar-width: none;
+}
+
+@layer base {
+  .sohne-light {
+    font-family: "SohneLight";
+    letter-spacing: 0.012rem;
+  }
+
+  .typewriter-regular {
+    font-family: "TypewriterRegular";
+    letter-spacing: 0.0275rem;
+  }
+
+  .typewriter-bold {
+    font-family: "TypewriterBold";
+    letter-spacing: 0.0175rem;
+  }
+
+  .home-category {
+    @apply text-sm underline underline-offset-2;
+  }
+
+  .home-content {
+    @apply text-[0.8125rem] sohne-light;
+  }
+
+  .hover-rotate {
+    @apply transition-transform hover:rotate-0;
+  }
+
+  .button {
+    @apply hover:underline hover:cursor-pointer underline-offset-2;
+  }
+  .button.current {
+    @apply underline;
+  }
+
+  .thumbnail {
+    @apply hidden absolute w-1/2 right-0;
+  }
+  .showThumbnail:hover .thumbnail {
+    @apply block;
+  }
+
+  /* @media (min-width: 768px) {
+    .button {
+      @apply hover:no-underline hover:bg-white hover:mix-blend-exclusion hover:cursor-pointer underline-offset-2;
+    }
+    .button.current {
+      @apply no-underline bg-white mix-blend-exclusion;
+    }
+  } */
+}
