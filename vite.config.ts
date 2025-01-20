@@ -5,7 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/chaewonyu",
+  base: "/portfolio-2024",
   plugins: [react(), tsconfigPaths()],
   css: {
     postcss: {
