@@ -27,16 +27,16 @@ export default function ProjectList() {
         // className={`-rotate-6 mt-auto mb-16 bg-white mix-blend-exclusion pl-1 hover:mix-blend-normal ${
         //   selectedProject !== null ? "ml-14" : "ml-14"
         // }`}
-        className={`-rotate-6 mt-auto ml-[6.5rem] md:ml-[1rem] xl:ml-[6.5rem] mb-16 bg-white mix-blend-exclusion pl-1 pb-[0.1rem] md:hover:mix-blend-normal ${
+        className={`-rotate-6 mt-auto ml-[6.5rem] md:ml-[1rem] xl:ml-[6.75rem] mb-16 bg-white mix-blend-exclusion pb-[0.1rem] md:hover:mix-blend-normal ${
           currentPage === "home" ? "hover:mix-blend-normal" : ""
         }`} //backdrop-blur-sm
       >
-        <div className="home-category">Project</div>
+        <div className="home-category pl-1">Project</div>
         <div className="home-content min-w-80 md:min-w-60">
           <ul>
             {projectData.map((project: Project, idx) => (
               <div
-                className={`w-fit button ${
+                className={`pl-1 w-fill button ${
                   selectedProject === project ? "current" : ""
                 }`}
                 key={idx}

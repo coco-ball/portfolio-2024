@@ -21,8 +21,7 @@ const projectData = [
     tools: "Unity, Oculus, Adobe Premiere Pro",
     image: getImageArray("mindly", 13),
     engHonors: "Grand Prize in SK Creative Challenge at 2023 HCI Conference",
-    korHonors:
-      "2023 HCI 학회의 SK Creative Challenge에서 대상을 수상하였습니다.",
+    korHonors: "2023 HCI 학회의 SK Creative Challenge에서 대상을 수상했습니다.",
   },
   {
     name: "S-Factory Rebranding",
@@ -78,7 +77,7 @@ const projectData = [
     tools: "R, QGIS, Mapbox, HTML, CSS, JS",
     image: getImageArray("banjihamap", 8),
     engHonors: "Published on page 9 of the Seoul Shinmun on June 29, 2023",
-    korHonors: "2023년 6월 29일자 서울신문 9면에 실린 프로젝트입니다.",
+    korHonors: "2023년 6월 29일자 서울신문 9면에 게재되었습니다.",
   },
   {
     name: "Waffle Sans",

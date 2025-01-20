@@ -93,4 +93,13 @@ body {
   .showThumbnail:hover .thumbnail {
     @apply block;
   }
+
+  /* @media (min-width: 768px) {
+    .button {
+      @apply hover:no-underline hover:bg-white hover:mix-blend-exclusion hover:cursor-pointer underline-offset-2;
+    }
+    .button.current {
+      @apply no-underline bg-white mix-blend-exclusion;
+    }
+  } */
 }

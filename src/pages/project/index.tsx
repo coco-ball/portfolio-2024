@@ -63,15 +63,15 @@ export default function ProjectPage() {
           )} */}
         </div>
       </div>
-      <div>
-        {selectedProject?.engHonors && (
-          <div className="text-xs sohne-light w-full h-11 px-4 pt-1 bg-black text-white overflow-clip">
-            <p className="-rotate-3">{selectedProject?.engHonors}</p>
-            <p className="-rotate-3">{selectedProject?.korHonors}</p>
-          </div>
-        )}
-      </div>
       <ul ref={imageContainerRef} className="col-span-2 overflow-y-scroll">
+        <div>
+          {selectedProject?.engHonors && (
+            <div className="flex gap-3 text-[0.68rem] md:text-xs sohne-light w-full px-4 py-1 bg-black text-white overflow-clip">
+              <p className="w-60 flex-1">{selectedProject?.engHonors}</p>
+              <p className="w-60 flex-1">{selectedProject?.korHonors}</p>
+            </div>
+          )}
+        </div>
         {selectedProject?.image.map((img, idx) => (
           <img
             src={`/image/project/${img}`}
