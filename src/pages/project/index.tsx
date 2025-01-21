@@ -43,24 +43,6 @@ export default function ProjectPage() {
             <p className="mb-5">{selectedProject?.engDescription}</p>
             <p>{selectedProject?.korDescription}</p>
           </div>
-          {/* {selectedProject?.engHonors && (
-            <div className="text-xs mt-8 content-center p-0.5 w-32 h-32 bg-gray-300 text-white overflow-clip">
-              <p className="-rotate-6 w-[7.75rem]">
-                {selectedProject?.engHonors}
-                <br />
-                <br />
-                {selectedProject?.korHonors}
-              </p>
-            </div>
-          )} */}
-          {/* {selectedProject?.engHonors && (
-            <p className="bg-black text-[#D2D2D4] text-xs p-0.5 -rotate-6 w-60 ml-auto mt-2 md:mt-20">
-              {selectedProject?.engHonors}
-              <br />
-              <br />
-              {selectedProject?.korHonors}
-            </p>
-          )} */}
         </div>
       </div>
       <ul ref={imageContainerRef} className="col-span-2 overflow-y-scroll">
@@ -78,6 +60,7 @@ export default function ProjectPage() {
             className="w-full"
             alt=""
             key={idx}
+            loading="lazy"
           />
         ))}
       </ul>

@@ -4,7 +4,7 @@ function HomePage() {
   return (
     <>
       <ProjectList></ProjectList>
-      <div className="h-fit flex flex-col col-start-3 gap-14 -rotate-6 mt-32 pl-2 w-120 md:mt-2 md:pl-0 md:mix-blend-exclusion hover:mix-blend-normal">
+      <div className="h-fit flex flex-col col-start-3 gap-14 -rotate-6 mt-32 pl-2 w-120 md:mt-12 md:pl-0 md:mix-blend-exclusion hover:mix-blend-normal transition-all duration-">
         <div className="bg-white pl-1">
           <p className="home-category">About</p>
           <p className="home-content">
