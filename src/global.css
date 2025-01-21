@@ -5,32 +5,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap");
 
 @font-face {
-  font-family: "TypewriterThin";
-  src: url(@/../../public/fonts/JMHTypewriter-Thin.ttf) format("truetype");
-}
-@font-face {
-  font-family: "TypewriterRegular";
-  src: url(@/../../public/fonts/JMHTypewriter.ttf) format("truetype");
-}
-@font-face {
-  font-family: "TypewriterBold";
-  src: url(@/../../public/fonts/JMHTypewriter-Bold.ttf) format("truetype");
-}
-@font-face {
-  font-family: "TypewriterBlack";
-  src: url(@/../../public/fonts/JMHTypewriter-Black.ttf) format("truetype");
-}
-@font-face {
   font-family: "SohneLight";
-  src: url(@/../../public/fonts/Sohne-Leicht.otf) format("opentype");
+  src: url("/fonts/Sohne-Leicht.otf") format("opentype");
 }
 @font-face {
   font-family: "SohneRegular";
-  src: url(@/../../public/fonts/Sohne-Buch.otf) format("opentype");
+  src: url("/fonts/Sohne-Buch.otf") format("opentype");
 }
 @font-face {
   font-family: "SohneMedium";
-  src: url(@/../../public/fonts/Sohne-Kräftig.otf) format("opentype");
+  src: url("/fonts/Sohne-Kräftig.otf") format("opentype");
 }
 
 body {
