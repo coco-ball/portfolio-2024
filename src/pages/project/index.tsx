@@ -1,10 +1,14 @@
 import { useEffect, useRef } from "react";
 import { useProject } from "@/contexts/ProjectContext";
 import ProjectList from "@/components/ProjectList";
+import usePreloadFirstImages from "@/hooks/usePreloadFirstImages";
 
 export default function ProjectPage() {
   const { selectedProject } = useProject();
   const imageContainerRef = useRef<HTMLUListElement | null>(null);
+
+  const images = selectedProject?.image ?? [];
+  usePreloadFirstImages(images, 2);
 
   useEffect(() => {
     if (imageContainerRef.current) {
@@ -54,7 +58,7 @@ export default function ProjectPage() {
             </div>
           )}
         </div>
-        {selectedProject?.image.map((img, idx) => (
+        {images.map((img, idx) => (
           <img
             src={`/image/project/${img}`}
             className="w-full"
