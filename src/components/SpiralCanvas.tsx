@@ -65,6 +65,17 @@ export default function SpiralCanvas() {
       ? "100%"
       : "23.5%";
 
+  // 색추출용
+  const color = new THREE.Color(bgColor);
+  const hexColor = color.getHexString();
+  console.log(
+    "bgColor: '#" +
+      hexColor +
+      "', spiralColor: '#" +
+      spiralColor.getHexString() +
+      "'"
+  );
+
   return (
     <Canvas
       // className={selectedProject === null ? "canvas-home" : "canvas-project"}
@@ -77,12 +88,6 @@ export default function SpiralCanvas() {
         transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
         transitionDuration: "500ms",
       }}
-      // style={{
-      //   background: bgColor,
-      // }}
-      // className={`spiral-canvas ${
-      //   selectedProject === null ? "project-null" : "project-selected"
-      // }`}
       camera={{ position: cameraPosition, fov: 75, near: 1, far: 10000 }}
       gl={{ antialias: true }}
     >
