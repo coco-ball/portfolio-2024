@@ -158,6 +158,32 @@ const projectData = [
     image: getImageArray("codedartworks", 4),
   },
   {
+    name: "Waffle Life",
+    year: "2022",
+    link: "",
+    engDescription:
+      "Waffle Life is a multiplayer mobile nurturing game where players raise a waffle character together. It won 2nd place at the hackathon 'Interactions Never Seen Before', hosted by our web development club. I created the game’s icon and pixel art for the characters.",
+    korDescription:
+      "Waffle Life는 여러 명이 함께 와플 캐릭터를 키워내는 모바일 양육 게임으로, 웹 개발 동아리에서 주최한 해커톤 ‘세상에 없던 인터랙션’에서 2위를 수상하였습니다. 게임 아이콘 및 캐릭터 픽셀아트를 작업하였습니다.",
+    mainCategory: "Mobile Game",
+    category: "Mobile UX/UI Design, Graphic Design",
+    tools: "Figma, Adobe Illustrator, AfterEffects",
+    image: getImageArray("wafflelife", 3),
+  },
+  {
+    name: "LinkBoggle!",
+    year: "2024",
+    link: "",
+    engDescription:
+      "Created a board game that integrates a web-based interface, inspired by the board game Labyrinth. Players draw a menu card and must complete a dish by connecting the correct ingredients to the stove for a set amount of time, following on-screen instructions. The game features a specially designed board embedded with conductive circuits that detect block movements. When players connect ingredients to the stove by shifting blocks on the board, the system recognizes the circuit connection, triggering the cooking process on the screen. I designed the graphics for the menu, ingredient cards, and game interface.",
+    korDescription:
+      "보드게임 Labyrinth를 변형하여 웹 화면이 결합된 보드게임 이어보글!을 제작하였습니다. 요리할 메뉴 카드를 뽑고, 화면의 지시에 따라 알맞은 재료를 일정 시간 이상 화로에 연결하여 요리를 완성해야 합니다. 전도체와 회로가 부착된 특수제작 보드판에서 블록을 움직여 재료와 화로를 연결하면, 보드판의 회로를 통해 이를 감지하고 화면에서 해당 재료가 요리됩니다. 메뉴와 재료의 그래픽과 카드, 게임 화면을 디자인하였습니다.",
+    mainCategory: "Board Game",
+    category: "UX/UI Design, Graphic Design",
+    tools: "Figma, Adobe Illustrator",
+    image: getImageArray("linkboggle", 2),
+  },
+  {
     name: "Seeya",
     year: "2024",
     link: "",
@@ -208,6 +234,28 @@ const projectData = [
     category: "UX/UI Design, Graphic Design, Website Development",
     tools: "React, Figma, Adobe Illustrator",
     image: getImageArray("blockpuzzle", 4),
+  },
+  {
+    name: "The Picture of Dorian Gray",
+    year: "2024",
+    link: "",
+    engDescription: "",
+    korDescription: "",
+    mainCategory: "Video, 5min",
+    category: "Video",
+    tools: "Adobe Photoshop, After Effect",
+    image: getImageArray("doriangray", 5),
+  },
+  {
+    name: "Wemade Co. ERP",
+    year: "2025",
+    link: "",
+    engDescription: "",
+    korDescription: "",
+    mainCategory: "SaaS",
+    category: "UX/UI Design",
+    tools: "Figma",
+    image: getImageArray("wemade", 2),
   },
 ];
 

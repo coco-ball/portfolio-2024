@@ -25,7 +25,7 @@ function App() {
   return (
     <CurrentProjectProvider>
       <ProjectProvider>
-        <div className="h-screen md:h-screen md:grid md:grid-cols-4">
+        <div className="h-screen md:grid md:grid-cols-4">
           <CanvasProvider>
             <SpiralCanvas />
             {/* <img src={Logo} className="h-[20rem]" alt="Logo"></img> */}

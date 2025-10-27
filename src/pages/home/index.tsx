@@ -4,7 +4,7 @@ function HomePage() {
   return (
     <>
       <ProjectList></ProjectList>
-      <div className="h-fit flex flex-col col-start-3 gap-14 -rotate-6 mt-32 pl-2 w-120 md:mt-12 md:pl-0 md:mix-blend-exclusion hover:mix-blend-normal transition-all duration-">
+      <div className="h-fit flex flex-col md:col-start-3 gap-14 -rotate-6 mt-8 pl-2 w-120 md:mt-12 md:pl-0 md:mix-blend-exclusion hover:mix-blend-normal transition-all duration-">
         <div className="bg-white pl-1">
           <p className="home-category">About</p>
           <p className="home-content">
@@ -23,17 +23,28 @@ function HomePage() {
             </a>
             <br />
             <span>Github / </span>
-            <a href="https://github.com/coco-ball" className="hover:underline">
+            <a
+            // href="https://github.com/coco-ball"
+            // className="hover:underline"
+            >
               coco-ball
             </a>
             <br />
-            <span>Instagram / </span>
+            <span>Linkedin / </span>
+            <a
+            // href="https://www.linkedin.com/in/chaewonyu"
+            // className="hover:underline"
+            >
+              chaewonyu
+            </a>
+            <br />
+            {/* <span>Instagram / </span>
             <a
               href="https://www.instagram.com/co_lorem/"
               className="hover:underline"
             >
               @co_lorem
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
