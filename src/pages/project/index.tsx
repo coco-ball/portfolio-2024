@@ -1,20 +1,25 @@
 import { useEffect, useRef } from "react";
 import { useProject } from "@/contexts/ProjectContext";
 import ProjectList from "@/components/ProjectList";
-import usePreloadFirstImages from "@/hooks/usePreloadFirstImages";
+// import OptimizedImage from "@/components/OptimizedImage";
+// import usePreloadFirstImages from "@/hooks/usePreloadFirstImages";
 
 export default function ProjectPage() {
   const { selectedProject } = useProject();
   const imageContainerRef = useRef<HTMLUListElement | null>(null);
 
-  const images = selectedProject?.image ?? [];
-  usePreloadFirstImages(images, 2);
+  // const images = selectedProject?.image ?? [];
+  // usePreloadFirstImages(images, 2);
 
   useEffect(() => {
     if (imageContainerRef.current) {
       imageContainerRef.current.scrollTo(0, 0);
     }
   }, [selectedProject]);
+
+  // const raw = selectedProject?.image ?? [];
+  // // 1@800.webp, 3@1600.jpg 같은 파생 파일은 제외
+  // const images = raw.filter((name) => !/@\d+\.(webp|jpe?g)$/i.test(name));
 
   return (
     <>
@@ -58,7 +63,9 @@ export default function ProjectPage() {
             </div>
           )}
         </div>
-        {images.map((img, idx) => (
+        {/* {images.map((img, idx) => ( */}
+        {selectedProject?.image.map((img, idx) => (
+          // <OptimizedImage key={idx} fileName={img} />
           <img
             src={`/image/project/${img}`}
             className="w-full"
@@ -67,6 +74,22 @@ export default function ProjectPage() {
             loading="lazy"
           />
         ))}
+        {/* {images.map((img, idx) =>
+          img.toLowerCase().endsWith(".gif") ? (
+            // gif는 그대로 <img> (또는 나중에 <video>로 교체)
+            <img
+              key={idx}
+              src={`/image/project/${img}`}
+              alt=""
+              className="w-full"
+              loading="lazy"
+              decoding="async"
+            />
+          ) : (
+            // 사진류는 파생 파일을 내부에서 쓰는 OptimizedImage
+            <OptimizedImage key={idx} fileName={img} />
+          )
+        )} */}
       </ul>
     </>
   );
